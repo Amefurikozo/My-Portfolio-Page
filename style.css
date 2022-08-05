@@ -1,0 +1,1076 @@
+@font-face {
+    font-family: poppins;
+    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.main-page{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.divider{
+    width: 50px;
+    height: 1px;
+    background-color: white;
+}
+
+p {
+    font-family: roboto;
+}
+
+.what-am-i p, .bt-text p{
+    font-size: 14px;
+}
+
+button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 1px;
+}
+
+.skill-container span{
+    font-family: poppins;
+    letter-spacing: 1px;
+}
+
+/* LEFT SIDE */
+.container-left{
+    width: 58%;
+    height: 100vh;
+    background-image: url(/img/bg.jpg);
+    background-size: 218%;
+    background-repeat: no-repeat;
+    /* background-position-x: -830px; */
+    background-position: center;
+    background-position-y: top;
+
+    position: relative;
+
+    box-shadow: 4px 0px 8px 1px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.linear{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    left: 0;
+    bottom: 0;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50.67%, rgba(0, 0, 0, 0) 100%);
+
+    z-index: 3;
+}
+
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.left-components{
+    width: 100%;
+    height: 100%;
+    padding-top: 2vh;
+    padding-bottom: 8vh;
+
+    display: flex;
+    
+}
+
+.left-box{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.right-box{
+    min-width: 6%;
+    max-width: 80px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0 auto;
+}
+
+.menu-button{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.menu-button img{
+    height: fit-content;
+}
+
+.menu-button img:hover{
+    filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+    cursor: pointer;
+}
+
+.contact-me{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    z-index: 4;
+}
+
+.right-box img{
+    width: 50px;
+}
+
+.contact-me img:hover{
+    transform: scale(1.1);
+
+    transition: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.contact-me img{
+    margin-top: 25px;
+    filter: drop-shadow(0px 0px 2px rgb(0 0 0 / 1)); 
+}
+
+.about-me{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    color: white;
+}
+
+.about-text{
+    align-self: center;
+}
+
+.what-am-i{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.what-am-i .divider{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.me{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: url(./img/me.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+
+    margin-right: 15px;
+}
+
+.bt-text{
+    color: rgb(255, 255, 255);
+    margin-bottom: 4px;
+    z-index: 4;
+}
+
+.bt-text .divider{
+    margin-bottom: 8px;
+}
+
+.about-me, .bt-text{
+    padding-left: 40px;
+}
+
+/* RIGHT SIDE */
+.container-right{
+    width: 42%;
+    height: 100vh;
+    position: relative;
+}
+
+.slogan, .content, .select{
+    padding-left: 40px;
+}
+
+.slogan{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+
+    background-color: #44535C;
+    color: rgba(255, 255, 255, 0.9);
+
+   
+}
+
+.slogan h1{
+    font-family: lato;
+    font-weight: 100;
+
+    line-height: 36px;
+    letter-spacing: 1px;
+
+}
+
+.content{
+    width: 70%;
+    height: 65%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.content h1{
+    padding-top: 25px;
+    margin-bottom: 2px;
+    color: #171919da;
+
+    font-family: poppins-bold;
+    font-size: 22px;
+}
+
+.hello p{
+    padding-right: 20px;
+}
+
+.hello span{
+    display: block;
+}
+
+.skill-bar{
+    width: 60%;
+    height: fit-content;
+    
+    background-color: #c1c1c1;
+    color: white;
+    font-weight: bold;
+}
+
+.skill-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-container img{
+    margin-left: 2px;
+    width: 35px;
+}
+
+
+.frontend{
+    width: 65%;
+    height: 100%;
+    padding: 8px 0px 8px 10px;
+    background-color: #5B5250;
+}
+
+.backend{
+    width: 35%;
+    height: 100%;
+    padding: 8px 0px 8px 10px;
+    background-color: #5B5250;
+}
+
+.design{
+    width: 55%;
+    height: 100%;
+    padding: 8px 0px 8px 10px;
+    background-color: #5B5250;
+}
+
+.passion{
+    width: 100%;
+    height: 100%;
+    padding: 8px 0px 8px 10px;
+    background-color: #5B5250;
+}
+
+.select{
+    width: 100%;
+    height: 20%;
+    background-color: #171919;
+}
+
+.buttons-container{
+    width: fit-content;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select-content-buttons{
+    background-color: #44535C;
+    margin-bottom: 22px;
+
+    border-radius: 25px;
+}
+
+.select-content-buttons button:nth-child(1){
+    border-radius: 25px 0px 0px 25px;
+}
+
+.select-content-buttons button:nth-child(4){
+    border-radius: 0px 25px 25px 0px;
+}
+
+.select-content-buttons button{
+    width: 120px;
+    height: fit-content;
+    padding: 15px 0px;
+    color: rgb(255, 255, 255);
+    background-color: #44535C;
+
+    outline: none;
+    border: none;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.select-content-buttons .current{
+    background-color: white;
+    color: #44535C;
+    pointer-events: none;
+}
+
+.select-content-buttons button:hover{
+    background-color: #1719195c;
+}
+
+.mountain-sun{
+    width: 30%;
+    height: 80%;
+    background-color: #242D2A;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sun-container{
+    height: 140px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mountain-sun .sun{
+    margin: 0 auto;
+}
+
+.mountain-sun .mountain{
+    width: 100%;
+}
+
+@media (max-width: 1537px){
+    .slogan, .content, .select{
+        padding-left: 20px;
+    }
+}
+
+@media ( max-width: 1441px) {
+    .container-right{
+        width: 42%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .slogan{
+        width: 100%;
+        height: 15%;
+    }
+    
+    .slogan h1{
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+    }
+    
+    .content{
+        width: 70%;
+        height: 65%;
+    }
+    
+    .content h1{
+        padding-top: 0px;
+        font-size: 18px;
+    }
+
+    .content .current-skills h1{
+        padding-top: 15px;
+    }
+
+    .content .hello{
+        padding-top: 5px;
+    }
+    
+    .hello p{
+        padding-right: 20px;
+    }
+
+    .hello span{
+        display: inline;
+    }
+    
+    .skill-bar{
+        width: 60%;
+        height: fit-content;
+    }
+    
+    .skill-container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .skill-container span{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    
+    .skill-container img{
+        margin-left: 2px;
+        width: 30px;
+    }
+    
+    .frontend{
+        width: 65%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .backend{
+        width: 35%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .design{
+        width: 55%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .passion{
+        width: 100%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .select{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .buttons-container{
+        width: fit-content;
+        height: 100%;
+    }
+    
+    .select-content-buttons{
+        margin-bottom: 22px;
+    
+        border-radius: 25px;
+    }
+    
+    .select-content-buttons button{ 
+        font-size: 16px;
+    }
+    
+    .mountain-sun{
+        width: 30%;
+        height: 80%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .sun-container{
+        height: 15%;
+    }
+}
+
+@media ( max-width: 1366px ){
+    .hello {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 963px){
+    .about-me, .bt-text{
+        padding-left: 20px;
+    }
+    
+    .left-components{
+        margin: 0px;
+    }
+
+    .left-box .me {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu-button{
+        height: 60px;
+    }
+
+    .about-text p{
+        font-size: 16px;
+    }
+
+
+    .what-am-i p, .bt-text p{
+        font-size: 11px;
+    }
+
+    .right-box{
+        width: 25px;
+    }
+
+    .right-box img{
+        width: 25px;
+    }
+
+    .slogan h1{
+        font-size: 16px;
+    }
+
+    content h1:{
+        font-size: 12px
+    }
+
+    .skill-container span{
+        font-size: 10px;
+    }
+
+    .content .hello{
+        padding-top: 4px;
+    }
+    
+    .hello p{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+
+    .hello span{
+        display: inline;
+    }
+    
+    .skill-bar{
+        width: 60%;
+        height: fit-content;
+    }
+    
+    .skill-container{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .skill-container img{
+        margin-left: 2px;
+        width: 20px;
+    }
+    
+    .frontend{
+        width: 65%;
+        height: 100%;
+        padding: 3px 0px 3px 10px;
+    }
+    
+    .backend{
+        width: 35%;
+        height: 100%;
+        padding: 3px 0px 3px 10px;
+    }
+    
+    .design{
+        width: 55%;
+        height: 100%;
+        padding: 3px 0px 3px 10px;
+    }
+    
+    .passion{
+        width: 100%;
+        height: 100%;
+        padding: 3px 0px 3px 10px;
+    }
+    
+    .select{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .buttons-container{
+        width: fit-content;
+        height: 100%;
+    }
+    
+    .select-content-buttons{
+        margin-bottom: 22px;
+    
+        border-radius: 25px;
+    }
+    
+    .select-content-buttons button{ 
+        width: 85px;
+        font-size: 12px;
+    }
+    
+    .mountain-sun{
+        width: 30%;
+        height: 80%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .sun-container{
+        height: 20%;
+    }
+}
+
+@media ( orientation: portrait ){
+    .main-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-left{
+        width: 100%;
+        height: 100%;
+    }
+
+    .linear{
+        position: absolute;
+        width: 100%;
+        height: 20vh;
+        left: 0px;
+        bottom: 0;
+    
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50.67%, rgba(0, 0, 0, 0) 100%);
+    
+        z-index: 3;
+    }
+    
+    .left-components{
+        width: 100%;
+        height: 55vh;
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+    
+        display: flex;
+    }
+    
+    .left-box{
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .right-box{
+        width: 40px;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin: 0 auto;
+    }
+
+    .right-box img{
+        width: 40px;
+    }
+    
+    .menu-button{
+        width: 100%;
+        height: 70px;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    .menu-button img{
+        height: fit-content;
+    }
+    
+    .menu-button img:hover{
+        filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.7));
+        cursor: pointer;
+    }
+    
+    .contact-me{
+        width: 100%;
+        align-self: center;
+        text-align: center;
+        z-index: 4;
+    }
+    
+    .contact-me img:hover{
+        transform: scale(1.1);
+    
+        transition: all;
+        transition-duration: 0.25s;
+        transition-timing-function: ease-in-out;
+        cursor: pointer;
+    }
+    
+    .contact-me img{
+        margin-top: 25px;
+        filter: drop-shadow(0px 0px 2px rgb(0 0 0 / 1)); 
+    }
+    
+    .about-me{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        color: white;
+    }
+    
+    .about-text{
+        align-self: center;
+    }
+    
+    .what-am-i{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+    
+    .what-am-i .divider{
+        width: 20px;
+        margin-right: 10px;
+    }
+    
+    .me{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-image: url(./img/me.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 30%;
+    
+        margin-right: 15px;
+    }
+    
+    .bt-text{
+        color: rgb(255, 255, 255);
+        margin-bottom: 4px;
+        z-index: 4;
+    }
+    
+    .bt-text .divider{
+        margin-bottom: 8px;
+    }
+    
+    .about-me, .bt-text{
+        padding-left: 40px;
+    }
+
+    .container-right{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .slogan{
+        width: 100%;
+        height: 15%;
+    }
+    
+    .slogan h1{
+        font-size: 20px;
+        line-height: 36px;
+        letter-spacing: 1px;
+    }
+    
+    .content{
+        width: 70%;
+        height: 85%;
+    }
+    
+    .content h1{
+        padding-top: 0px;
+        font-size: 18px;
+    }
+
+    .content .current-skills h1{
+        padding-top: 15px;
+    }
+
+    .content .hello{
+        padding-top: 5px;
+    }
+    
+    .hello p{
+        padding-right: 100px;
+        font-size: 14px;
+    }
+
+    .hello span{
+        display: inline;
+    }
+    
+    .skill-bar{
+        width: 60%;
+        height: fit-content;
+    }
+    
+    .skill-container{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .skill-container span{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    
+    .skill-container img{
+        margin-left: 2px;
+        width: 40px;
+    }
+    
+    .frontend{
+        width: 65%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .backend{
+        width: 35%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .design{
+        width: 55%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .passion{
+        width: 100%;
+        height: 100%;
+        padding: 7px 0px 7px 10px;
+    }
+    
+    .select{
+        width: 100%;
+        height: 20%;
+    }
+    
+    .buttons-container{
+        width: fit-content;
+        height: 100%;
+    }
+    
+    .select-content-buttons{
+        margin-bottom: 22px;
+    
+        border-radius: 25px;
+    }
+    
+    .select-content-buttons button{ 
+        width: 105px;
+        font-size: 14px;
+    }
+    
+    .mountain-sun{
+        width: 25%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    
+    .sun-container{
+        height: 16%;
+    }
+}
+
+@media (max-width: 500px){
+    .about-me{
+        height: fit-content;
+        width: fit-content;
+    }
+
+    .about-me, .bt-text{
+        padding-left: 10px;
+    }
+
+    .about-me .divider{
+        width: 10px;
+    }
+
+    .what-am-i p, .bt-text p{
+        width: 65%;
+    }
+
+    .me{
+        width: 75px;
+        height: 75px;
+        margin-right: 5px;
+    }
+
+    .menu-button{
+        height: 45px;
+    }
+
+    .contact-me img{
+        margin-top: 10px;
+    }
+
+    .slogan h1{
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+    }
+
+    .skill-bar{
+        width: 80%;
+    }
+
+    .hello p{
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .slogan, .content, .select{
+        padding-left: 10px;
+    }
+
+    .dnone{
+        display: none;
+    }
+
+    .select button {
+        width: 90px;
+    }
+
+    .right-box{
+        width: 35px;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        margin: 0 auto;
+    }
+
+    .right-box img{
+        width: 35px;
+    }
+}
+
+@media (max-width: 400px){
+    .select button{
+        width: 70px;
+        font-size: 13px;
+    }
+
+    .select button:nth-child(1), .select button:nth-child(2) {
+        padding-left: 7px;
+    }
+
+    .select button:nth-child(4), .select button:nth-child(3){
+        padding-right: 7px;
+    }
+}
+
+
+@media (min-width: 964px) and (max-width: 1280px){
+    .buttons-container{
+        width: fit-content;
+        height: 100%;
+    }
+    
+    .select-content-buttons{
+        margin-bottom: 22px;
+    
+        border-radius: 25px;
+    }
+    
+    .select-content-buttons button{ 
+        width: 90px;
+        font-size: 14px;
+    }
+    
+    .mountain-sun{
+        width: 30%;
+        height: 80%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+/* 768×1024 – 32.74%
+1280×800 – 6.88%
+810×1080 – 6.63%
+800×1280 – 6.31%
+601×962 – 5.02%
+962×601 – 3.24% */
+
+/* 360×800 – 9.15% 
+414×896 – 6.18%
+360×640 – 5.49%
+390×844 – 5.24%
+412×915 – 4.82%
+360×780 – 4.2%
+393×873 – 3.58% */
