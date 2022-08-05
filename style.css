@@ -1,21 +1,31 @@
 @font-face {
     font-family: poppins;
-    src: url(/fonts/Poppins/Poppins-Regular.ttf);
+    src: url(./fonts/Poppins/Poppins-Regular.ttf);
 }
 
 @font-face {
     font-family: poppins-bold;
-    src: url(/fonts/Poppins/Poppins-Bold.ttf);
+    src: url(./fonts/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: lato;
-    src: url(/fonts/Lato/Lato-Regular.ttf);
+    src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: lato-light;
+    src: url(./fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: lato-thin;
+    src: url(./fonts/Lato/Lato-Thin.ttf);
 }
 
 @font-face {
     font-family: roboto;
-    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+    src: url(./fonts/Roboto/Roboto-Regular.ttf);
 }
 
 /* GENERAL USE */
@@ -286,8 +296,7 @@ button{
 }
 
 .slogan h1{
-    font-family: lato;
-    font-weight: 100;
+    font-family: lato-thin;
 
     line-height: 36px;
     letter-spacing: 1px;

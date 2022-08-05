@@ -5,7 +5,7 @@ const work = $('.work').detach()
 const goals = $('.goals').detach()
 const pricing = $('.pricing').detach()
 
-$('.button1').click(function () {
+$('.button1').on('click',function () {
 	$('.work').detach()
     $('.goals').detach()
     $('.pricing').detach()
@@ -17,7 +17,7 @@ $('.button1').click(function () {
     $('.button4').removeClass('current')
 })
 
-$('.button2').click(function () {
+$('.button2').on('click',function () {
 	$('.about').detach()
     $('.goals').detach()
     $('.pricing').detach()
@@ -29,7 +29,7 @@ $('.button2').click(function () {
     $('.button4').removeClass('current')
 })
 
-$('.button3').click(function () {
+$('.button3').on('click', function () {
 	$('.about').detach()
     $('.work').detach()
     $('.pricing').detach()
@@ -41,7 +41,7 @@ $('.button3').click(function () {
     $('.button4').removeClass('current')
 })
 
-$('.button4').click(function () {
+$('.button4').on('click',function () {
 	$('.about').detach()
     $('.work').detach()
     $('.goals').detach()
@@ -59,6 +59,7 @@ $('.content').append(about)
 // NAVBAR
 const dropdown = $('.dropdown').detach()
 let dropdownVisibility = false
+
 $('.menu-button img').click(function () {
     if (dropdownVisibility === true){
         $('.dropdown').detach()
