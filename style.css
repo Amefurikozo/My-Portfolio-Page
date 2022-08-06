@@ -49,6 +49,56 @@ animate__animated animate__flipInX
 
 /* GENERAL USE */
 
+.goal-categories div{
+    width: 99%;
+    height: fit-content;
+
+    margin-bottom: 10px;
+    padding: 12px;
+    padding-left: 6px;
+    border-radius: 20px 0px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.goal-categories img{
+    filter: invert(1);
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    margin: 0px !important;
+    border-right: 2px solid #171919;
+}
+
+.career, .personal, .hopefully, .general{
+    display: flex;
+}
+
+.career p, .personal p, .hopefully p, .general p{
+    display: block;
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+
+    height: 100%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.career{
+    background-color: #636c72;
+}
+
+.personal{
+    background-color: #474e53;
+}
+
+.hopefully{
+    background-color: #333b3f;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -980,7 +1030,7 @@ button{
     }
     
     .content{
-        width: 70%;
+        width: 75%;
         height: 85%;
     }
     
@@ -1248,6 +1298,18 @@ button{
     .mountain-sun{
         width: 25%;
         height: 592px;
+    }
+
+    .career, .personal, .hopefully{
+        flex-direction: column;
+        padding: 10px !important;
+    }
+
+    .goal-categories img{
+        border: none;
+        border-bottom: 2px solid rgb(0, 0, 0);
+        margin: 0px;
+        margin-bottom: 6px !important;
     }
 }
 
