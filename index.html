@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <script src="/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="main-page">
@@ -47,19 +47,24 @@
                             </div>
                         </div>
 
-                        <div class="contact-me">
-                            <img src="./svg/mail.svg" alt="" onclick="window.open('mailto:webdevcharilaosg')">
-                            <img src="./svg/github.svg" alt="" onclick="window.open('https://github.com/Amefurikozo')">
-                            <img src="./svg/linkedin.svg" alt="" onclick="window.open('https://www.linkedin.com/in/charilaos-giannopoulos/')">
-                            <img src="./svg/instagram.svg" alt="" onclick="window.open('https://www.instagram.com/betweenwinds/')">
+                        <div class="contact-me contact-me-mob">
+                            <div class="contact-box-1">
+                                <img id="mail" src="./svg/mail.svg" alt="" onclick="window.open('mailto:webdevcharilaosg')">
+                                <img id="github" src="./svg/github.svg" alt="" onclick="window.open('https://github.com/Amefurikozo')">
+                            </div>
+
+                            <div class="contact-box-2">
+                                <img id="linked" src="./svg/linkedin.svg" alt="" onclick="window.open('https://www.linkedin.com/in/charilaos-giannopoulos/')">
+                                <img id="insta" src="./svg/instagram.svg" alt="" onclick="window.open('https://www.instagram.com/betweenwinds/')">
+                            </div>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
         </div>
 
         <div class="container-right">
-            <div class="slogan">
+            <div class="slogan" id="slogan">
                 <h1>
                     DESIGNING WITH SENSE <br>
                     IDEAS WITH A MEANING
@@ -128,13 +133,106 @@
                             <span>to the world of Web Developing & Designing.</span> 
                             The destination of this journey? <br>
                             Happiness through a better life. <br>
-                            Feel free to reach out about anything! ☕
+                            Feel free to reach out <span class="dnone">about anything</span>! ☕
                         </p>
                     </div>
                 </div>
 
-                <div class="work"></div>
-                <div class="goals"></div>
+                <div class="work">
+                    <h1>MY PROJECTS</h1>
+                    <div class="project">
+                        <img class="p-icon nature-ico" src="/project-icons/nature.png" alt="">
+                        <div>
+                            <p>Nature Whispers Hi</p>
+                            <small>Anybody there? Earth is calling.</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon starbloom-ico" src="/project-icons/starbloom.png" alt="">
+                        <div>
+                            <p>Starbloom</p>
+                            <small>The couples app that grows alongside you. Create moments with it.</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon moonshot-ico" src="/project-icons/moonshot.png" alt="">
+                        <div>
+                            <p>Moonshot</p>
+                            <small>One step for humanity, one shot for eternity.</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon remember-ico" src="/project-icons/kite.png" alt="">
+                        <div>
+                            <p>Remember When</p>
+                            <small>Childhood memories coming to get you</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon decora-ico" src="/project-icons/decora.png" alt="">
+                        <div>
+                            <p>Decora</p>
+                            <small>Design your dream room</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon journey-ico" src="/project-icons/diary.png" alt="">
+                        <div>
+                            <p>The Journey</p>
+                            <small>Your personal and special secret diary</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon compass-ico" src="/project-icons/compass.png" alt="">
+                        <div>
+                            <p>Your Compass</p>
+                            <small>Your guide to your travels</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon happiness-ico" src="/project-icons/health.png" alt="">
+                        <div>
+                            <p>Secrets to Happiness</p>
+                            <small>About Hygge, Ikigai, and other ways of living that might help touch serenity</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon bliss-ico" src="/project-icons/bliss.png" alt="">
+                        <div>
+                            <p>Bliss Restaurant</p>
+                            <small>Tasting experience that feels like heaven</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon hungy-ico" src="/project-icons/hungy.png" alt="">
+                        <div>
+                            <p>Hungy</p>
+                            <small>A recipies app that's simple</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon nullaby-ico" src="/project-icons/nullaby.png" alt="">
+                        <div>
+                            <p>Nullaby Software</p>
+                            <small>Software Solutions for businesses.</small>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img class="p-icon youtube-ico" src="/project-icons/yt.png" alt="">
+                        <div>
+                            <p>My Youtube Lessons</p>
+                            <small>Knowledge about web design & web developing for everybody</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="goals">
+                    <h1>MY DREAMS & GOALS</h1>
+                    <div>
+
+                    </div>
+                </div>
+
                 <div class="pricing"></div>
             </div>
 
@@ -142,12 +240,15 @@
                 <div class="buttons-container">
                     <div class="select-content-buttons">
                         <button class="current button1">
+                            <a href="#slogan"></a> 
                             About <span class="dnone">Me</span>
                         </button>
                         <button class="button2">
+                            <a href="#slogan"></a> 
                             <span class="dnone">My</span> Work
                         </button>
                         <button class="button3">
+                            <a href="#slogan"></a> 
                             <span class="dnone">My</span> Goals
                         </button>
                         <button class="button4">
@@ -168,5 +269,6 @@
     </section>
     
     <script src="/script.js"></script>
+    <script>import 'animate.css';</script>
 </body>
 </html>

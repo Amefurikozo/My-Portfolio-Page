@@ -1,5 +1,4 @@
 // CONTENT
-
 const about = $('.about').detach()
 const work = $('.work').detach()
 const goals = $('.goals').detach()
@@ -57,16 +56,14 @@ $('.content').append(about)
 
 
 // NAVBAR
-const dropdown = $('.dropdown').detach()
 let dropdownVisibility = false
-
-$('.menu-button img').click(function () {
+$('.menu-button img').on('click',function () {
     if (dropdownVisibility === true){
-        $('.dropdown').detach()
+        $('.dropdown').css('display', 'none')
         dropdownVisibility = false
         $('.menu-button img').removeClass('menuActive')
     } else {
-        $('.menu-button').append(dropdown)
+        $('.dropdown').css('display', 'flex')
         dropdownVisibility = true
         $('.menu-button img').addClass('menuActive')
     }
