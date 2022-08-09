@@ -213,7 +213,7 @@ button{
     margin: 0 auto;
 }
 
-.what-am-i p, .bt-text p{
+.my-job p, .bt-text p{
     font-size: 14px;
 }
 
@@ -271,13 +271,13 @@ button{
     align-self: center;
 }
 
-.what-am-i{
+.my-job{
     display: flex;
     align-items: center;
     margin-top: 5px;
 }
 
-.what-am-i .divider{
+.my-job .divider{
     width: 20px;
     margin-right: 10px;
 }
@@ -895,6 +895,18 @@ button{
         /* font-size: 14px; */
         padding-right: 10px;
     }
+
+    .plan-info p{
+        margin-left: 20px;
+    }
+
+    .plan-info h3{
+        padding-left: 20px;
+    }
+
+    .lets-talk button:nth-child(1){
+        margin-left: 20px;
+    }
 }
 
 @media ( max-width: 1366px ){
@@ -927,7 +939,7 @@ button{
     }
 
 
-    .what-am-i p, .bt-text p{
+    .my-job p, .bt-text p{
         font-size: 11px;
     }
 
@@ -943,8 +955,9 @@ button{
         font-size: 16px;
     }
 
-    content h1:{
-        font-size: 12px
+    /* check content h1 at a later time */
+    content h1{
+        font-size: 12px;
     }
 
     .skill-container span{
@@ -1141,13 +1154,13 @@ button{
         align-self: center;
     }
     
-    .what-am-i{
+    .my-job{
         display: flex;
         align-items: center;
         margin-top: 5px;
     }
     
-    .what-am-i .divider{
+    .my-job .divider{
         width: 20px;
         margin-right: 10px;
     }
@@ -1321,7 +1334,7 @@ button{
         width: 10px;
     }
 
-    .what-am-i p, .bt-text p{
+    .my-job p, .bt-text p{
         width: 65%;
         /* text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.500), 1px -1px 0 rgba(0, 0, 0, 0.500), -1px 1px 0 rgba(0, 0, 0, 0.500), 1px 1px 0 rgba(0, 0, 0, 0.500); */
     }
