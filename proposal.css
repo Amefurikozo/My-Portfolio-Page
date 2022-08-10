@@ -1,0 +1,383 @@
+@font-face {
+	font-family: poppins;
+	src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: poppins-bold;
+	src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(/img/bg.jpg);
+	background-size: cover;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filter {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+}
+
+/* Menu Buttons */
+.menu-buttons {
+	width: 560px;
+	height: fit-content;
+	position: absolute;
+	top: -50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-buttons button:hover {
+	filter: invert(1);
+}
+
+.main-page,
+.more-about-me,
+.proposal-plan {
+	width: 180px;
+	padding: 10px 10px;
+
+	font-family: poppins;
+	border-radius: 5px;
+	border: none;
+
+	cursor: pointer;
+}
+
+/* Form Layout */
+.proposal-form-page {
+	width: fit-content;
+	height: fit-content;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.proposal-form {
+	width: 1100px;
+	height: 700px;
+	background-color: rgb(255, 255, 255);
+
+	border: 3px solid white;
+
+	display: flex;
+	position: absolute;
+}
+
+.proposal-form-header {
+	width: 250px;
+	height: 100%;
+	color: white;
+
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.proposal-form-body {
+	width: 850px;
+	height: 100%;
+
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* New Website? Buttons */
+.website {
+	display: inline-flex;
+	background: #fff;
+	height: 100px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 5px;
+	padding: 20px 15px;
+}
+
+.website .option {
+	background: #fff;
+	height: 100%;
+	width: 270px;
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 2px solid #4a6066;
+	transition: all 0.3s ease;
+}
+
+.website .option .dot {
+	height: 20px;
+	width: 20px;
+	background: #d9d9d9;
+	border-radius: 50%;
+	position: relative;
+	margin: 0px 15px;
+}
+
+.website .option .dot::before {
+	position: absolute;
+	content: '';
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	background: #222c2f;
+	border-radius: 50%;
+	opacity: 0;
+	transform: scale(1.5);
+	transition: all 0.3s ease;
+}
+
+.website input[type='radio'] {
+	display: none;
+}
+
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2 {
+	border-color: #4a6066;
+	background: #4a6066;
+}
+
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot {
+	background: #fff;
+}
+
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before {
+	opacity: 1;
+	transform: scale(1);
+}
+.website .option span {
+	font-size: 20px;
+	color: #4a6066;
+}
+#option-1:checked:checked ~ .option-1 span,
+#option-2:checked:checked ~ .option-2 span {
+	color: #fff;
+}
+
+.split-sections {
+	display: flex;
+}
+
+/* Banner */
+.pf-header-container {
+	width: 100%;
+	height: 100%;
+
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(34, 44, 47);
+}
+
+.pf-header-container h1 {
+	text-align: center;
+	font-size: 30px;
+	font-family: poppins-bold;
+	padding: 0px 20px;
+}
+
+.form-stars {
+	width: 50px;
+	position: absolute;
+	top: 0;
+	margin-top: 40px;
+
+	filter: invert(1);
+}
+
+.form-tree {
+	width: 100px;
+	position: absolute;
+	bottom: 0;
+
+	filter: invert(1);
+}
+
+/* General */
+.left-form-section,
+.right-form-section {
+	width: 50%;
+}
+
+/*Left fill plan section*/
+.left-form-section {
+    height: 100%;
+}
+
+.proposal-form-input {
+	display: flex;
+}
+
+.proposal-form-input img {
+	width: 30px;
+	height: fit-content;
+
+	margin-top: 17px;
+	margin-right: 10px;
+}
+
+.location img {
+	margin-top: 10px;
+}
+
+.form-input {
+	display: block;
+
+	width: 75%;
+
+	border: none;
+	border-bottom: 1px solid black;
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	font-family: poppins-bold;
+	font-size: 15px;
+	line-height: 2;
+	color: rgb(0, 0, 0);
+
+	padding-left: 10px;
+}
+
+.form-input::placeholder {
+	font-family: poppins;
+	font-size: 14px;
+
+	padding-left: 5px;
+
+	color: rgba(0, 0, 0, 0.65);
+}
+
+fieldset {
+	margin-top: 20px;
+	width: 85%;
+}
+
+legend {
+	font-size: 16px;
+	padding: 0px 4px;
+}
+
+.website-actions {
+	height: 130px;
+}
+
+#website-actions {
+	height: 100%;
+}
+
+.form-textarea {
+	resize: none;
+
+	width: 100%;
+	height: 80px;
+
+	outline: none;
+	/* border: 1px solid rgba(0, 0, 0, 0.5); */
+	border: none;
+	overflow: auto;
+
+	font-size: 16px;
+
+	padding: 10px 15px;
+	color: black;
+}
+
+.form-textarea::placeholder {
+	font-size: 14px;
+}
+
+/* Right form fill section */
+.right-form-section{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.pages-count{
+    margin-top: 10px;
+}
+
+.pages-count select{
+    margin-top: 5px;
+}
+
+.pages-count, .page-layouts, .cms, .e-commerce{
+    margin-bottom: 20px;
+}
+
+.page-layouts p, .cms p, .e-commerce p{
+    margin-bottom: 6px;
+}
+
+.page-layouts label, .cms label, .e-commerce label{
+    margin-right: 15px;
+}
+
+.integrations{
+    width: 100%;
+}
+
+/* Submit Button */
+.get-proposal-button {
+	width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+    margin-right: 30px;
+}
+
+.get-proposal-button img {
+	display: none;
+}
+
+.get-proposal-button .submit-form {
+	border: none;
+	background-color: #5b5250;
+	color: white;
+	font-family: poppins;
+	font-size: 18px;
+	padding: 10px 15px;
+
+	cursor: pointer;
+}
+
+.get-proposal-button .submit-form:hover {
+	background-color: #2e2a28;
+}
+
+.form-send {
+	margin-top: 15px;
+	width: 40px;
+
+	filter: invert(30%) sepia(1%) saturate(3032%) hue-rotate(323deg)
+		brightness(111%) contrast(101%);
+}
