@@ -1,0 +1,161 @@
+@font-face {
+	font-family: poppins;
+	src: url(./fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+	font-family: poppins-bold;
+	src: url(./fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: lato;
+    src: url(./fonts/Lato/Lato-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	background-image: url(/img/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.more-about-me-page{
+    width: 962px;
+    height: 440px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+	border-radius: 0px 0px;
+}
+
+.about-cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.about-banner{
+	width: 220px;
+	height: 100%;
+	background-color: #222C2F;
+	color: white;
+	font-family: poppins-bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+	border: 3px solid white;
+	border-right: none;
+}
+
+.about-icons-top {
+	width: fit-content;
+	height: auto;
+	display: flex;
+	position: absolute;
+	top: 5px;
+}
+
+.about-icons-bottom {
+	width: fit-content;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	bottom: 10px;
+}
+
+.about-icons-top img, .about-icons-bottom img{
+	width: 35px;
+	filter: invert(1);
+	margin: 5px 5px;
+}
+
+.myself-card{
+    width: fit-content;
+    height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.myself-card img{
+    width: 250px;
+	height: auto;
+
+	border-radius: 25px;
+}
+
+.text-card{
+	width: 600px;
+
+    font-size: 13px;
+    font-family: lato;
+    padding: 40px;
+	/* background-color: #3b6054; */
+	color: #202020;
+
+	line-height: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-card h1{
+	font-family: poppins-bold;
+	color: #202020;
+	margin-top: 20px;
+}
+
+.text-card .divider{
+	width: 40px;
+	height: 1px;
+	background-color: #20202081;
+	margin: 7px 0px;
+}
+
+.more-about-me-page{
+	position: relative;
+}
+
+.menu-buttons {
+	width: 560px;
+	height: fit-content;
+	position: absolute;
+	top: -50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu-buttons button:hover {
+	filter: invert(1);
+}
+
+.main-page,
+.proposal-plan,
+.contact-me-button {
+	width: 180px;
+	padding: 10px 10px;
+
+	font-family: poppins;
+	border-radius: 5px;
+	border: none;
+
+	cursor: pointer;
+}
