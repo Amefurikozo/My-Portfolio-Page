@@ -22,7 +22,7 @@
 body {
 	width: 100%;
 	height: 100vh;
-	background-image: url(/img/bg.jpg);
+	background-image: url(./img/bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 
@@ -65,26 +65,39 @@ body {
 }
 
 .about-icons-top {
-	width: fit-content;
+	width: 100%;
 	height: auto;
 	display: flex;
 	position: absolute;
-	top: 5px;
+	justify-content: space-around;
+	bottom: 60px;
 }
 
 .about-icons-bottom {
-	width: fit-content;
+	width: 100%;
 	height: auto;
 	display: flex;
 	flex-direction: row;
 	position: absolute;
+	justify-content: space-around;
 	bottom: 10px;
 }
 
 .about-icons-top img, .about-icons-bottom img{
-	width: 35px;
+	width: 30px;
 	filter: invert(1);
-	margin: 5px 5px;
+}
+
+.cards-content-container{
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.myself-card-mob{
+	display: none;
 }
 
 .myself-card{
@@ -102,12 +115,12 @@ body {
 }
 
 .text-card{
-	width: 600px;
+	width: 500px;
+	height: 400px;
 
     font-size: 13px;
     font-family: lato;
     padding: 40px;
-	/* background-color: #3b6054; */
 	color: #202020;
 
 	line-height: 20px;
@@ -123,11 +136,10 @@ body {
 	margin-top: 20px;
 }
 
-.text-card .divider{
-	width: 40px;
-	height: 1px;
+.text-card hr{
+	width: 42px;
 	background-color: #20202081;
-	margin: 7px 0px;
+	margin: 10px 0px;
 }
 
 .more-about-me-page{
@@ -158,4 +170,337 @@ body {
 	border: none;
 
 	cursor: pointer;
+}
+
+@media (orientation: portrait){
+	.more-about-me-page{
+		width: 700px;
+		height: fit-content;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		border-radius: 0px 0px;
+	}
+	
+	.about-cards{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+	
+	.about-banner{
+		width: 100%;
+		height: 110px;
+	
+		border: 3px solid white;
+	}
+	
+	.about-icons-top {
+		width: fit-content;
+		height: fit-content;
+		top: 5px;
+		right: 0px;
+	}
+	
+	.about-icons-bottom {
+		width: fit-content;
+		height: auto;
+		bottom: 5px;
+		right: 0px;
+	}
+	
+	.about-icons-top img, .about-icons-bottom img{
+		width: 35px;
+		filter: invert(1);
+		margin: 5px 5px;
+	}
+	
+	.cards-content-container{
+		width: 100%;
+		height: 460px;
+	}
+	
+	.myself-card{
+		width: fit-content;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	
+	.text-card{
+		width: 500px;
+		height: 400px;
+	}
+
+	.menu-buttons {
+		width: 440px;
+		height: fit-content;
+		position: absolute;
+		top: -50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.menu-buttons button:hover {
+		filter: invert(1);
+	}
+	
+	.main-page,
+	.proposal-plan,
+	.contact-me-button {
+		width: 140px;
+		
+		font-size: 12px;
+		font-family: poppins;
+		border-radius: 5px;
+		border: none;
+	
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 700px){
+	body{
+		height: 100vh;
+	}
+
+	.more-about-me-page{
+		width: 359px;
+		height: fit-content;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		border-radius: 0px 0px;
+	}
+	
+	.about-cards{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+	
+	.about-banner{
+		width: 100%;
+		height: 120px;
+	
+		border: 3px solid white;
+	}
+	
+	.about-icons-top {
+		width: fit-content;
+		height: fit-content;
+		top: auto;
+		bottom: 5px !important;
+		left: 0px;
+	}
+	
+	.about-icons-bottom {
+		width: fit-content;
+		height: auto;
+		bottom: 5px;
+		right: 0px;
+	}
+	
+	.about-icons-top img, .about-icons-bottom img{
+		width: 20px;
+		filter: invert(1);
+		margin: 5px 5px;
+	}
+	
+	.cards-content-container{
+		width: 100%;
+		height: 650px;
+		flex-direction: column;
+	}
+
+	.myself-card-mob{
+		background-image: url(./img/me.jpeg);
+		background-size: cover;
+		background-position: center;
+		display: block;
+
+		margin-top: 15px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+	
+	.myself-card{
+		display: none;
+	}
+
+	.text-card{
+		width: 100%;
+		height: 470px;
+		padding: 25px;
+	}
+
+	.menu-buttons {
+		width: 359px;
+		height: fit-content;
+		position: absolute;
+		top: -50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.menu-buttons button:hover {
+		filter: invert(1);
+	}
+	
+	.main-page,
+	.proposal-plan,
+	.contact-me-button {
+		width: 115px;
+		
+		font-size: 12px;
+		font-family: poppins;
+		border-radius: 5px;
+		border: none;
+	
+		cursor: pointer;
+	}
+}
+
+@media (max-width:500px){
+	body{
+		height: 900px;
+	}
+
+	.more-about-me-page{
+		width: 359px;
+		height: fit-content;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		border-radius: 0px 0px;
+	}
+	
+	.about-cards{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+	
+	.about-banner{
+		width: 100%;
+		height: 120px;
+	
+		border: 3px solid white;
+	}
+	
+	.about-icons-top {
+		width: fit-content;
+		height: fit-content;
+		top: auto;
+		bottom: 5px !important;
+		left: 0px;
+	}
+	
+	.about-icons-bottom {
+		width: fit-content;
+		height: auto;
+		bottom: 5px;
+		right: 0px;
+	}
+	
+	.about-icons-top img, .about-icons-bottom img{
+		width: 20px;
+		filter: invert(1);
+		margin: 5px 5px;
+	}
+	
+	.cards-content-container{
+		width: 100%;
+		height: 650px;
+		flex-direction: column;
+	}
+
+	.myself-card-mob{
+		background-image: url(./img/me.jpeg);
+		background-size: cover;
+		background-position: center;
+		display: block;
+
+		margin-top: 15px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+	
+	.myself-card{
+		display: none;
+	}
+
+	.text-card{
+		width: 100%;
+		height: 470px;
+		padding: 25px;
+	}
+
+	.menu-buttons {
+		width: 359px;
+		height: fit-content;
+		position: absolute;
+		top: -50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.menu-buttons button:hover {
+		filter: invert(1);
+	}
+	
+	.main-page,
+	.proposal-plan,
+	.contact-me-button {
+		width: 115px;
+		
+		font-size: 12px;
+		font-family: poppins;
+		border-radius: 5px;
+		border: none;
+	
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 370px){
+	.menu-buttons {
+		width: 100%;
+		height: fit-content;
+		position: absolute;
+		top: -50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.menu-buttons button:hover {
+		filter: invert(1);
+	}
+	
+	.main-page,
+	.proposal-plan,
+	.contact-me-button {
+		width: 110px;
+		
+		font-size: 11px;
+		font-family: poppins;
+		border-radius: 5px;
+		border: none;
+	
+		cursor: pointer;
+	}
 }
