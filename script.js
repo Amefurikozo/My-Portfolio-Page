@@ -114,21 +114,12 @@ $('.content').append(about)
 
 
 // NAVBAR
-let dropdownVisibility = false
 $('.menu-button img').on('click',function () {
-    if (dropdownVisibility === true){
+    if ($('.dropdown').css('display') == 'flex'){
         $('.dropdown').css('display', 'none')
-        dropdownVisibility = false
         $('.menu-button img').removeClass('menuActive')
     } else {
         $('.dropdown').css('display', 'flex')
-        dropdownVisibility = true
         $('.menu-button img').addClass('menuActive')
     }
-})
-
-//PLAN-INFO
-
-$('.slogan').on('click', function() {
-    console.log('clicked')
 })
