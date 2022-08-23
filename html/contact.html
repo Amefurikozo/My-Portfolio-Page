@@ -5,39 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
     <section class="contact-form-page">
         <div class="contact-form">
             <div class="menu-buttons">
-                <button class="main-page" onclick="document.location='index.html'">MAIN PAGE</button>
+                <button class="main-page" onclick="document.location='../index.html'">MAIN PAGE</button>
                 <button class="proposal-plan" onclick="document.location='proposal.html'"><span class="dnone">GET A  </span>PLAN PROPOSAL</button>
                 <button class="more-about-me" onclick="document.location='about.html'">ABOUT ME</button>
             </div>
             <div class="contact-form-header">
                 <div class="cf-header-container">
-                    <img class="form-stars" src="./svg/stars.svg" alt="">
+                    <img class="form-stars" src="../icons/stars.svg" alt="">
                     <h1>GET IN TOUCH</h1>
-                    <img class="form-caravan" src="./svg/caravan.png" alt="">
+                    <img class="form-caravan" src="../icons/caravan.png" alt="">
                 </div>
             </div>
             
             <form class="contact-form-body">
                 <div class="contact-form-input">
-                    <img src="./svg/name.svg" alt="">
-                    <input class="form-input" id="name" type="text" placeholder="Type your name here" spellcheck="false">
+                    <img src="../icons/name.svg" alt="">
+                    <input class="form-input" id="name" name="name" type="text" placeholder="Type your name here" spellcheck="false">
                 </div>
                 <div class="contact-form-input">  
-                    <img src="./svg/mail2.svg" alt="">   
-                    <input class="form-input" id="email" type="text" placeholder="Type your email here" spellcheck="false">
+                    <img src="../icons/mail2.svg" alt="">   
+                    <input class="form-input" id="email" type="text" name="email" placeholder="Type your email here" spellcheck="false">
                 </div>
                 <div class="textarea-container">     
-                    <textarea class="form-textarea" id="message" placeholder="Type your message/questions here" spellcheck="false"></textarea>
+                    <textarea class="form-textarea" id="message" name="message" placeholder="Type your message/questions here" spellcheck="false"></textarea>
                 </div>
                 <div class="submit-button-container">
                     <button class="submit-form">SEND MESSAGE</button>
-                    <img class="form-send" src="./svg/send.png" alt="">
+                    <img class="form-send" src="../icons/send.png" alt="">
                 </div>
             </form>
         </div>    

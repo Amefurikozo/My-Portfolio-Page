@@ -5,28 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="proposal.css">
+    <link rel="stylesheet" href="../css/proposal.css">
 </head>
 <body>
     <section class="proposal-form-page">
         <div class="proposal-form">
             <div class="menu-buttons">
-                <button class="main-page" onclick="document.location='index.html'">MAIN PAGE</button>
+                <button class="main-page" onclick="document.location='../index.html'">MAIN PAGE</button>
                 <button class="more-about-me" onclick="document.location='about.html'">ABOUT ME</button>
                 <button class="contact-me-button" onclick="document.location='contact.html'">MESSAGE ME</button>
             </div>
             <div class="proposal-form-header">
                 <div class="pf-header-container">
-                    <img class="form-stars" src="./svg/stars.svg" alt="">
+                    <img class="form-stars" src="../icons/stars.svg" alt="">
                     <h1>GET A PROPOSAL</h1>
-                    <img class="form-tree" src="./svg/tree.png" alt="">
+                    <img class="form-tree" src="../icons/tree.png" alt="">
                 </div>
             </div>
             
             <form class="proposal-form-body">
                 <div class="website">
-                    <input type="radio" name="select" id="option-1" checked>
-                    <input type="radio" name="select" id="option-2">
+                    <input type="radio" name="newwebsite" id="option-1" checked>
+                    <input type="radio" name="redesign" id="option-2">
                     <label for="option-1" class="option option-1">
                         <div class="dot"></div>
                         <span> <span class="dnone">I want a </span>New website!</span>
@@ -39,27 +39,27 @@
                 <div class="split-sections">
                     <div class="left-form-section">
                         <div class="proposal-form-input">
-                            <img src="./svg/name.svg" alt="">
-                            <input class="form-input" id="name" type="text" placeholder="Type your name here" spellcheck="false">
+                            <img src="../icons/name.svg" alt="">
+                            <input class="form-input" id="name" type="text" name="name" placeholder="Type your name here" spellcheck="false">
                         </div>
                         <div class="proposal-form-input">  
-                            <img src="./svg/mail2.svg" alt="">   
-                            <input class="form-input" id="email" type="text" placeholder="Type your email here" spellcheck="false">
+                            <img src="../icons/mail2.svg" alt="">   
+                            <input class="form-input" id="email" type="text" name="email" placeholder="Type your email here" spellcheck="false">
                         </div>
                         <div class="proposal-form-input location">  
-                            <img src="./svg/location.png" alt="">   
-                            <input class="form-input" id="country" type="text" placeholder="Where are you from?" spellcheck="false">
+                            <img src="../icons/location.png" alt="">   
+                            <input class="form-input" id="country" type="text" name="country" placeholder="Where are you from?" spellcheck="false">
                         </div>
                         <div class="textarea-container">
                             <fieldset class="business">
                                 <legend>What does your business do?</legend>
-                                <textarea class="form-textarea" id="business" placeholder="Type your message here." spellcheck="false"></textarea>
+                                <textarea class="form-textarea" id="business" name="business" placeholder="Type your message here." spellcheck="false"></textarea>
                             </fieldset>
                         </div>
                         <div class="textarea-container">
                             <fieldset class="website-actions">
                                 <legend>What do you want people to do on your website?</legend>
-                                <textarea class="form-textarea" id="website-actions" placeholder=
+                                <textarea class="form-textarea" id="website-actions" name="webactions" placeholder=
                                 "Common actions include:
 • Create a user account
 • Buy a product or service
@@ -85,15 +85,15 @@
                             <p>Will different sections/pages of your site require different designs, layouts or coloring?</p>
                             <div>
                               <input type="radio" id="choice1"
-                               name="contact" value="Yes">
+                               name="difflayout" value="Yes">
                               <label for="choice1">Yes</label>
                           
                               <input type="radio" id="choice2"
-                               name="contact" value="No">
+                               name="difflayout" value="No">
                               <label for="choice2">No</label>
                           
                               <input type="radio" id="choice3"
-                               name="contact" value="Maybe">
+                               name="difflayout" value="Maybe">
                               <label for="choice3">Maybe</label>
                             </div>
                         </div>
@@ -102,15 +102,15 @@
                             <p>Do you need a content management system?</p>
                             <div>
                               <input type="radio" id="pick1"
-                               name="contact" value="Yes">
+                               name="cms" value="Yes">
                               <label for="pick1">Yes</label>
                           
                               <input type="radio" id="pick2"
-                               name="contact" value="No">
+                               name="cms" value="No">
                               <label for="pick2">No</label>
                           
                               <input type="radio" id="pick3"
-                               name="contact" value="Maybe">
+                               name="cms" value="Maybe">
                               <label for="pick3">I don't know</label>
                             </div>
                         </div>
@@ -119,11 +119,11 @@
                             <p>Will you need a shopping cart system for e-commerce?</p>
                             <div>
                                 <input type="radio" id="select1"
-                                name="contact" value="Yes">
+                                name="ecommerce" value="Yes">
                                 <label for="select1">Yes</label>
                             
                                 <input type="radio" id="select2"
-                                name="contact" value="No">
+                                name="ecommerce" value="No">
                                 <label for="select2">No</label>
                             </div>
                         </div>
@@ -139,8 +139,8 @@
 
                 <div class="bottom-section">
                     <div class="submit-button-container get-proposal-button">
-                        <button class="submit-form">SUBMIT FORM</button>
-                        <img class="form-send" src="./svg/send.png" alt="">
+                        <button class="submit-form" type="submit">SUBMIT FORM</button>
+                        <img class="form-send" src="../icons/send.png" alt="">
                     </div>
                 </div>              
             </form>
