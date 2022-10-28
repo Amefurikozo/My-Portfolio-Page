@@ -1,0 +1,8 @@
+.env
+node_modules
+server.js
+package.json
+package-lock.json
+.htacess
+script-jq.js
+notes.txt

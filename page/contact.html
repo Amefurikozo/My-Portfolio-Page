@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="Charilaos Giannopoulos"
+			content="Portfolio page. Contact form. Got a question? Feel free to send me a message."
+		/>
+		<meta
+			name="description"
+			content="Welcome to my page. My name is Charilaos Giannopoulos and I'm a Web Dev from Greece. Passionate on what I do and always strive for the best results possible. Got a project in mind? Feel free to reach out if you need any help. Ask me about anything."
+		/>
+		<title>Contact Charilaos Giannopoulos</title>
+		<link
+			rel="canonical"
+			href="https://charisthewebdev.netlify.app/page/contact.html"
+		/>
+		<link rel="shortcut icon" type="image/png" href="../img/favi.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preload" as="image" href="../img/bg.webp" />
+		<link rel="stylesheet" href="../css/contact.css" />
+	</head>
+	<body>
+		<section class="contact-form-page">
+			<div class="contact-form">
+				<div class="menu-buttons">
+					<a class="main-page" href="/"> MAIN PAGE </a>
+					<a class="more-about-me" href="about.html"> ABOUT ME </a>
+					<a class="proposal-plan" href="proposal.html">
+						<span class="dnone">GET A </span>PLAN PROPOSAL
+					</a>
+				</div>
+				<div class="contact-form-header">
+					<div class="cf-header-container">
+						<img class="form-stars" src="../icons/stars.svg" alt="" />
+						<h1>GET IN TOUCH</h1>
+						<img class="form-caravan" src="../icons/caravan.png" alt="" />
+					</div>
+				</div>
+
+				<form
+					class="contact-form-body"
+					action="https://formsubmit.co/webdevcharilaosg@gmail.com"
+					method="POST"
+				>
+					<div class="contact-form-input">
+						<img src="../icons/name.svg" alt="" />
+						<input
+							class="form-input"
+							id="name"
+							name="name"
+							type="text"
+							placeholder="Type your name here"
+							spellcheck="false"
+							required
+						/>
+					</div>
+					<div class="contact-form-input">
+						<img src="../icons/mail2.svg" alt="" />
+						<input
+							class="form-input"
+							id="email"
+							type="email"
+							name="email"
+							placeholder="Type your email here"
+							spellcheck="false"
+							required
+						/>
+					</div>
+					<div class="textarea-container">
+						<textarea
+							class="form-textarea"
+							id="message"
+							type="text"
+							name="message"
+							placeholder="Type your message/questions here"
+							spellcheck="false"
+							required
+						></textarea>
+					</div>
+					<div class="submit-button-container">
+						<button class="submit-form" type="submit">SEND MESSAGE</button>
+						<img class="form-send" src="../icons/send.png" alt="" />
+					</div>
+					<input type="hidden" name="_captcha" value="false" />
+					<input
+						type="hidden"
+						name="_next"
+						value="https://charisthewebdev.netlify.app/page/success.html"
+					/>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>

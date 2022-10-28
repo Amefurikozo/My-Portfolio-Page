@@ -1,18 +1,3 @@
-@font-face {
-	font-family: poppins;
-	src: url(../fonts/Poppins/Poppins-Regular.ttf);
-}
-
-@font-face {
-	font-family: poppins-bold;
-	src: url(../fonts/Poppins/Poppins-Bold.ttf);
-}
-
-@font-face {
-    font-family: lato;
-    src: url(../fonts/Lato/Lato-Regular.ttf);
-}
-
 * {
 	margin: 0;
 	padding: 0;
@@ -22,39 +7,41 @@
 body {
 	width: 100%;
 	height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/bg.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+		url(../img/bg.webp);
 	background-size: cover;
 	background-repeat: no-repeat;
-
+	background-attachment: fixed;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.more-about-me-page{
-    width: 962px;
-    height: 440px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
+.more-about-me-page {
+	width: 962px;
+	height: 440px;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
 	border-radius: 0px 0px;
 }
 
-.about-cards{
-    width: 100%;
-    height: 100%;
-    display: flex;
+.about-cards {
+	width: 100%;
+	height: 100%;
+	display: flex;
 	justify-content: space-between;
-    align-items: center;
-    position: relative;
+	align-items: center;
+	position: relative;
 }
 
-.about-banner{
+.about-banner {
 	width: 220px;
 	height: 100%;
-	background-color: #222C2F;
+	background-color: #222c2f;
 	color: white;
-	font-family: poppins-bold;
+	font-family: poppins;
+	font-weight: bold;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -83,12 +70,13 @@ body {
 	bottom: 10px;
 }
 
-.about-icons-top img, .about-icons-bottom img{
+.about-icons-top img,
+.about-icons-bottom img {
 	width: 30px;
 	filter: invert(1);
 }
 
-.cards-content-container{
+.cards-content-container {
 	width: 100%;
 	height: 400px;
 	display: flex;
@@ -96,31 +84,31 @@ body {
 	justify-content: space-between;
 }
 
-.myself-card-mob{
+.myself-card-mob {
 	display: none;
 }
 
-.myself-card{
-    width: fit-content;
-    height: 100%;
+.myself-card {
+	width: fit-content;
+	height: 100%;
 	display: flex;
 	align-items: center;
 }
 
-.myself-card img{
-    width: 250px;
+.myself-card img {
+	width: 250px;
 	height: auto;
 
 	border-radius: 25px;
 }
 
-.text-card{
-	width: 500px;
+.text-card {
+	width: 510px;
 	height: 400px;
 
-    font-size: 13px;
-    font-family: lato;
-    padding: 40px;
+	font-size: 13px;
+	font-family: lato;
+	padding: 35px;
 	color: #202020;
 
 	line-height: 20px;
@@ -130,19 +118,20 @@ body {
 	justify-content: center;
 }
 
-.text-card h1{
-	font-family: poppins-bold;
+.text-card h2 {
+	font-family: poppins;
+	font-weight: bold;
 	color: #202020;
 	margin-top: 20px;
 }
 
-.text-card hr{
+.text-card hr {
 	width: 42px;
 	background-color: #20202081;
 	margin: 10px 0px;
 }
 
-.more-about-me-page{
+.more-about-me-page {
 	position: relative;
 }
 
@@ -155,8 +144,17 @@ body {
 	justify-content: space-between;
 }
 
-.menu-buttons button:hover {
-	filter: invert(1);
+.menu-buttons a {
+	background-color: #f0f0f0;
+	color: black;
+	font-size: 13px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.menu-buttons a:hover {
+	background-color: black;
+	color: white;
 }
 
 .main-page,
@@ -164,7 +162,7 @@ body {
 .contact-me-button {
 	width: 180px;
 	padding: 10px 10px;
-
+	font-size: 12;
 	font-family: poppins;
 	border-radius: 5px;
 	border: none;
@@ -172,8 +170,8 @@ body {
 	cursor: pointer;
 }
 
-@media (orientation: portrait){
-	.more-about-me-page{
+@media (orientation: portrait) {
+	.more-about-me-page {
 		width: 700px;
 		height: fit-content;
 		background-color: rgb(255, 255, 255);
@@ -181,8 +179,8 @@ body {
 		align-items: center;
 		border-radius: 0px 0px;
 	}
-	
-	.about-cards{
+
+	.about-cards {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -191,47 +189,48 @@ body {
 		align-items: center;
 		position: relative;
 	}
-	
-	.about-banner{
+
+	.about-banner {
 		width: 100%;
 		height: 110px;
-	
+
 		border: 3px solid white;
 	}
-	
+
 	.about-icons-top {
 		width: fit-content;
 		height: fit-content;
 		top: 5px;
 		right: 0px;
 	}
-	
+
 	.about-icons-bottom {
 		width: fit-content;
 		height: auto;
 		bottom: 5px;
 		right: 0px;
 	}
-	
-	.about-icons-top img, .about-icons-bottom img{
+
+	.about-icons-top img,
+	.about-icons-bottom img {
 		width: 35px;
 		filter: invert(1);
 		margin: 5px 5px;
 	}
-	
-	.cards-content-container{
+
+	.cards-content-container {
 		width: 100%;
 		height: 460px;
 	}
-	
-	.myself-card{
+
+	.myself-card {
 		width: fit-content;
 		height: 100%;
 		display: flex;
 		align-items: center;
 	}
-	
-	.text-card{
+
+	.text-card {
 		width: 500px;
 		height: 400px;
 	}
@@ -244,40 +243,41 @@ body {
 		display: flex;
 		justify-content: space-between;
 	}
-	
-	.menu-buttons button:hover {
-		filter: invert(1);
+
+	.menu-buttons a:hover {
+		background-color: black;
+		color: white;
 	}
-	
+
 	.main-page,
 	.proposal-plan,
 	.contact-me-button {
 		width: 140px;
-		
+
 		font-size: 12px;
 		font-family: poppins;
 		border-radius: 5px;
 		border: none;
-	
+
 		cursor: pointer;
 	}
 }
 
-@media (max-width: 700px){
-	body{
+@media (max-width: 700px) {
+	body {
 		height: 100vh;
 	}
 
-	.more-about-me-page{
-		width: 359px;
+	.more-about-me-page {
+		width: 95%;
 		height: fit-content;
 		background-color: rgb(255, 255, 255);
 		display: flex;
 		align-items: center;
 		border-radius: 0px 0px;
 	}
-	
-	.about-cards{
+
+	.about-cards {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -286,14 +286,14 @@ body {
 		align-items: center;
 		position: relative;
 	}
-	
-	.about-banner{
+
+	.about-banner {
 		width: 100%;
 		height: 120px;
-	
+
 		border: 3px solid white;
 	}
-	
+
 	.about-icons-top {
 		width: fit-content;
 		height: fit-content;
@@ -301,28 +301,29 @@ body {
 		bottom: 5px !important;
 		left: 0px;
 	}
-	
+
 	.about-icons-bottom {
 		width: fit-content;
 		height: auto;
 		bottom: 5px;
 		right: 0px;
 	}
-	
-	.about-icons-top img, .about-icons-bottom img{
+
+	.about-icons-top img,
+	.about-icons-bottom img {
 		width: 20px;
 		filter: invert(1);
 		margin: 5px 5px;
 	}
-	
-	.cards-content-container{
+
+	.cards-content-container {
 		width: 100%;
 		height: 650px;
 		flex-direction: column;
 	}
 
-	.myself-card-mob{
-		background-image: url(../img/me.jpeg);
+	.myself-card-mob {
+		background-image: url(../img/me.webp);
 		background-size: cover;
 		background-position: center;
 		display: block;
@@ -332,12 +333,12 @@ body {
 		height: 150px;
 		border-radius: 50%;
 	}
-	
-	.myself-card{
+
+	.myself-card {
 		display: none;
 	}
 
-	.text-card{
+	.text-card {
 		width: 100%;
 		height: 470px;
 		padding: 25px;
@@ -352,40 +353,48 @@ body {
 		display: flex;
 		justify-content: space-between;
 	}
-	
-	.menu-buttons button:hover {
-		filter: invert(1);
+
+	.menu-buttons a {
+		font-size: 12px;
 	}
-	
+
+	.menu-buttons a:hover {
+		background-color: black;
+		color: white;
+	}
+
 	.main-page,
 	.proposal-plan,
 	.contact-me-button {
 		width: 115px;
-		
+
 		font-size: 12px;
 		font-family: poppins;
 		border-radius: 5px;
 		border: none;
-	
+
 		cursor: pointer;
 	}
 }
 
-@media (max-width:500px){
-	body{
-		height: 900px;
+@media (max-width: 500px) {
+	body {
+		background-image: url(../img/bg-min.webp);
+		height: fit-content;
+		padding-top: 60px;
+		padding-bottom: 80px;
 	}
 
-	.more-about-me-page{
-		width: 359px;
+	.more-about-me-page {
+		width: 95%;
 		height: fit-content;
 		background-color: rgb(255, 255, 255);
 		display: flex;
 		align-items: center;
 		border-radius: 0px 0px;
 	}
-	
-	.about-cards{
+
+	.about-cards {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -394,14 +403,14 @@ body {
 		align-items: center;
 		position: relative;
 	}
-	
-	.about-banner{
+
+	.about-banner {
 		width: 100%;
 		height: 120px;
-	
+
 		border: 3px solid white;
 	}
-	
+
 	.about-icons-top {
 		width: fit-content;
 		height: fit-content;
@@ -409,28 +418,29 @@ body {
 		bottom: 5px !important;
 		left: 0px;
 	}
-	
+
 	.about-icons-bottom {
 		width: fit-content;
 		height: auto;
 		bottom: 5px;
 		right: 0px;
 	}
-	
-	.about-icons-top img, .about-icons-bottom img{
+
+	.about-icons-top img,
+	.about-icons-bottom img {
 		width: 20px;
 		filter: invert(1);
 		margin: 5px 5px;
 	}
-	
-	.cards-content-container{
+
+	.cards-content-container {
 		width: 100%;
-		height: 650px;
+		height: fit-content;
 		flex-direction: column;
 	}
 
-	.myself-card-mob{
-		background-image: url(../img/me.jpeg);
+	.myself-card-mob {
+		background-image: url(../img/me.webp);
 		background-size: cover;
 		background-position: center;
 		display: block;
@@ -440,46 +450,51 @@ body {
 		height: 150px;
 		border-radius: 50%;
 	}
-	
-	.myself-card{
+
+	.myself-card {
 		display: none;
 	}
 
-	.text-card{
+	.text-card {
 		width: 100%;
-		height: 470px;
+		height: fit-content;
 		padding: 25px;
-		padding-top: 0px;
+		padding-top: 15px;
 	}
 
 	.menu-buttons {
-		width: 359px;
+		width: 100%;
 		height: fit-content;
 		position: absolute;
 		top: -50px;
 		display: flex;
 		justify-content: space-between;
 	}
-	
-	.menu-buttons button:hover {
-		filter: invert(1);
+
+	.menu-button a {
+		width: fit-content;
 	}
-	
+
+	.menu-buttons a:hover {
+		background-color: black;
+		color: white;
+	}
+
 	.main-page,
 	.proposal-plan,
 	.contact-me-button {
 		width: 115px;
-		
+		margin: 0px 3px;
 		font-size: 12px;
 		font-family: poppins;
 		border-radius: 5px;
 		border: none;
-	
+
 		cursor: pointer;
 	}
 }
 
-@media (max-width: 370px){
+@media (max-width: 380px) {
 	.menu-buttons {
 		width: 100%;
 		height: fit-content;
@@ -488,21 +503,138 @@ body {
 		display: flex;
 		justify-content: space-between;
 	}
-	
-	.menu-buttons button:hover {
-		filter: invert(1);
+
+	.menu-buttons a:hover {
+		background-color: black;
+		color: white;
 	}
-	
+
 	.main-page,
 	.proposal-plan,
 	.contact-me-button {
-		width: 110px;
-		
-		font-size: 11px;
+		width: 117px;
+		padding: 10px 0px;
+
+		font-size: 12px;
 		font-family: poppins;
 		border-radius: 5px;
 		border: none;
-	
+
+		cursor: pointer;
+	}
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+	body {
+		height: fit-content;
+		padding: 80px;
+		background-image: url(../img/bg-min.webp);
+	}
+
+	.more-about-me-page {
+		width: 100%;
+		height: fit-content;
+		background-color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		border-radius: 0px 0px;
+	}
+
+	.about-cards {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		position: relative;
+	}
+
+	.about-banner {
+		width: 100%;
+		height: 120px;
+
+		border: 3px solid white;
+	}
+
+	.about-icons-top {
+		width: fit-content;
+		height: fit-content;
+		top: auto;
+		bottom: 5px !important;
+		left: 0px;
+	}
+
+	.about-icons-bottom {
+		width: fit-content;
+		height: auto;
+		bottom: 5px;
+		right: 0px;
+	}
+
+	.about-icons-top img,
+	.about-icons-bottom img {
+		width: 20px;
+		filter: invert(1);
+		margin: 5px 5px;
+	}
+
+	.cards-content-container {
+		width: 100%;
+		height: fit-content;
+		flex-direction: column;
+	}
+
+	.myself-card-mob {
+		background-image: url(../img/me.webp);
+		background-size: cover;
+		background-position: center;
+		display: block;
+
+		margin-top: 15px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+	}
+
+	.myself-card {
+		display: none;
+	}
+
+	.text-card {
+		width: 100%;
+		height: fit-content;
+		padding: 25px;
+		padding-top: 15px;
+	}
+
+	.menu-buttons {
+		width: 500px;
+		height: fit-content;
+		position: absolute;
+		top: -50px;
+		display: flex;
+		justify-content: left;
+	}
+
+	.menu-buttons a {
+		margin-right: 7px;
+	}
+
+	.menu-buttons a:hover {
+		background-color: black;
+		color: white;
+	}
+
+	.main-page,
+	.proposal-plan,
+	.contact-me-button {
+		width: 120px;
+		padding: 10px 10px;
+		font-size: 12px;
+		font-family: poppins;
+		border-radius: 5px;
+		border: none;
 		cursor: pointer;
 	}
 }

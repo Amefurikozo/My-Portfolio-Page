@@ -1,401 +1,599 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./js/jquery.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-</head>
-<body>
-    <section class="main-page">
-        <div class="container-left">
-            <div class="filter">
-                <div class="left-components">
-                    <div class="left-box">
-                        <div class="about-me animate__animated animate__fadeInDown">
-                            <div class="me"></div>
-                            <div class="about-text">
-                                <p class="my-name">Charilaos Giannopoulos</p>
-                                <div class="my-job">
-                                    <div class="divider"></div>
-                                    <p style="display: inline;">Passionate Web Dev & Designer Extraordinaire</p>
-                                </div>
-                            </div>
-                        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="Charilaos Giannopoulos"
+			content="Portfolio page, info about me, my work and contact details."
+		/>
+		<meta
+			name="description"
+			content="My Freelance Web Developing portfolio page. My name is Charilaos Giannopoulos. In this page, you can find some information about me along with my contact details. I'm a passionate and hard working man. Thanks for taking a look around."
+		/>
+		<title>Charilaos G. Portfolio Page</title>
+		<link rel="canonical" href="https://charisthewebdev.netlify.app" />
+		<link rel="shortcut icon" type="image/svg" href="./img/favi.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Poppins:wght@400;700&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preload" as="image" href="./img/bg.webp" />
+		<link rel="preload" as="image" href="./img/bg-min.webp" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/animate.css" />
+	</head>
+	<body>
+		<section class="main-page">
+			<div class="container-left">
+				<div class="filter">
+					<div class="left-components">
+						<div class="left-box">
+							<div class="about-me animate__animated animate__fadeInDown">
+								<div class="me"></div>
+								<header class="about-text">
+									<p class="my-name">Charilaos Giannopoulos</p>
+									<div class="my-job">
+										<div class="divider"></div>
+										<h1 style="display: inline" class="header">
+											Passionate Web Dev &amp Designer Extraordinaire
+										</h1>
+									</div>
+								</header>
+							</div>
 
-                        <div class="bt-text">
-                            <div class="divider"></div>
-                            <p>
-                                Your dreams and goals are important to me. 
-                                <span class="nextline">
-                                    I have some too, so... I know.
-                                </span>
-                            </p>    
-                        </div>
+							<div class="bt-text">
+								<div class="divider"></div>
+								<p>
+									Your dreams and goals are important to me.
+									<span class="nextline"> I have some too, so... I know. </span>
+								</p>
+							</div>
 
-                        <div class="linear"></div>
-                    </div>                  
+							<div class="linear"></div>
+						</div>
 
-                    <div class="right-box">
-                        <div class="menu-button">
-                            <img src="./icons/menu.svg" alt="">
+						<div class="right-box">
+							<nav class="menu-button">
+								<img src="./icons/menu.svg" alt="open menu button" />
 
-                            <div class="dropdown">
-                                <div class="divider"></div>
-                                <p onclick="document.location='html/proposal.html'">PROPOSAL PLAN</p>
-                                <p onclick="document.location='html/about.html'">MORE ABOUT ME</p>
-                                <p onclick="document.location='html/contact.html'">CONTACT FORM</p>
-                            </div>
-                        </div>
+								<div class="dropdown">
+									<div class="divider"></div>
+									<a href="./page/proposal.html"> PROPOSAL PLAN </a>
+									<a href="./page/about.html"> MORE ABOUT ME </a>
+									<a href="./page/contact.html"> CONTACT FORM </a>
+								</div>
+							</nav>
 
-                        <div class="contact-me contact-me-mob">
-                            <div class="contact-box-1">
-                                <img id="mail" src="./icons/mail.svg" alt="" onclick="window.open('mailto:webdevcharilaosg')">
-                                <img id="github" src="./icons/github.svg" alt="" onclick="window.open('https://github.com/Amefurikozo')">
-                            </div>
+							<div class="contact-me contact-me-mob">
+								<div class="contact-box-1">
+									<img
+										id="mail"
+										src="./icons/mail.svg"
+										alt="send me an email"
+										onclick="window.open('mailto:webdevcharilaosg')"
+									/>
+									<img
+										id="github"
+										src="./icons/github.svg"
+										alt="visit my github"
+										onclick="window.open('https://github.com/Amefurikozo')"
+									/>
+								</div>
 
-                            <div class="contact-box-2">
-                                <img id="linked" src="./icons/linkedin.svg" alt="" onclick="window.open('https://www.linkedin.com/in/charilaos-giannopoulos/')">
-                                <img id="insta" src="./icons/instagram.svg" alt="" onclick="window.open('https://www.instagram.com/betweenwinds/')">
-                            </div>
-                        </div>
-                    </div>                    
-                </div>
-            </div>
-        </div>
+								<div class="contact-box-2">
+									<img
+										id="linked"
+										src="./icons/linkedin.svg"
+										alt="visit my linked in"
+										onclick="window.open('https://www.linkedin.com/in/charilaos-giannopoulos/')"
+									/>
+									<img
+										id="insta"
+										src="./icons/instagram.svg"
+										alt="visit my instagram"
+										onclick="window.open('https://www.instagram.com/betweenwinds/')"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="container-right">
-            <div class="slogan" id="slogan">
-                <h1>
-                    DESIGNING WITH SENSE <br>
-                    IDEAS WITH A MEANING
-                </h1>
-                <img src="./icons/sun.svg" alt="">
-            </div>
+			<main class="container-right">
+				<div class="slogan" id="slogan">
+					<h2>
+						DESIGNING WITH SENSE <br />
+						IDEAS WITH A MEANING
+					</h2>
+					<img
+						src="./icons/sun.svg"
+						alt="sun icon"
+						class="animate__animated animate__fadeIn"
+					/>
+				</div>
 
-            <div class="content">
-                <div class="about">
-                    <div class="current-skills">
-                        <h1>CURRENTLY</h1>
-                        <div>
-                            <div class="skill-container">
-                                <div class="skill-bar">
-                                    <div class="frontend">
-                                        <span>FRONTEND</span>
-                                    </div>
-                                </div>
-                                <img src="./icons/info.svg" alt="">
-                            </div>
-    
-                            <div class="skill-container">
-                                <div class="skill-bar">
-                                    <div class="backend">
-                                        <span>
-                                            BACKEND
-                                        </span>
-                                    </div>
-                                </div>
-                                <img src="./icons/info.svg" alt="">
-                            </div>
-    
-                            <div class="skill-container">
-                                <div class="skill-bar">
-                                    <div class="design">
-                                        <span>
-                                            DESIGN
-                                        </span>
-                                    </div>
-                                </div>
-                                <img src="./icons/info.svg" alt="">
-                            </div>
-                            
-                            <div class="skill-container">
-                                <div class="skill-bar">
-                                    <div class="passion">
-                                        <span>
-                                            PASSION
-                                        </span>
-                                    </div>
-                                </div>
-                                <img src="./icons/info.svg" alt="">
-                            </div>
-    
-                        </div>
-                    </div>
-    
-                    <div class="hello">
-                        <h1>HELLO</h1>
-                        <p>
-                            Hope you're doing well. <br> 
-                            My name is Charilaos Giannopoulos. <br>
-                            I'm a web developer from the <br>
-                            beautiful all blue and white Greece. <br>
-                            You can call me Harry for ease. <br>
-                            <span>I'm a mostly self-taught career switcher on a journey</span> 
-                            <span>to the world of Web Developing & Designing.</span> 
-                            The destination of this journey? <br>
-                            Happiness through a better life. <br>
-                            Feel free to reach out <span class="dnone">about anything</span>! ☕
-                        </p>
-                    </div>
-                </div>
+				<div class="content">
+					<div class="about">
+						<div class="current-skills animate__animated animate__flipInX">
+							<h2>CURRENTLY</h2>
+							<div>
+								<div class="skill-container">
+									<div class="skill-bar">
+										<div class="frontend">
+											<span>FRONTEND</span>
+										</div>
+									</div>
+									<div class="tooltip">
+										<img src="./icons/info.svg" alt="frontend skills info" />
+										<span class="tooltiptext"
+											>HTML, CSS, JS, JQUERY, REACT, EXPO, MUI, BOOTSTRAP</span
+										>
+									</div>
+								</div>
 
-                <div class="work">
-                    <h1>MY PROJECTS</h1>
-                    <div class="project">
-                        <img class="p-icon nature-ico" src="./icons/nature.png" alt="">
-                        <div>
-                            <p>Nature Whispers Hi</p>
-                            <small>Anybody there? Earth is calling.</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon starbloom-ico" src="./icons/starbloom.png" alt="">
-                        <div>
-                            <p>Starbloom</p>
-                            <small>The couples app that grows alongside you. Create moments with it.</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon moonshot-ico" src="./icons/moonshot.png" alt="">
-                        <div>
-                            <p>Moonshot</p>
-                            <small>One step for humanity, one shot for eternity.</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon remember-ico" src="./icons/kite.png" alt="">
-                        <div>
-                            <p>Remember When</p>
-                            <small>Childhood memories coming to get you</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon decora-ico" src="./icons/decora.png" alt="">
-                        <div>
-                            <p>Decora</p>
-                            <small>Design your dream room</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon journey-ico" src="./icons/diary.png" alt="">
-                        <div>
-                            <p>The Journey</p>
-                            <small>Your personal and special secret diary</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon compass-ico" src="./icons/compass.png" alt="">
-                        <div>
-                            <p>Your Compass</p>
-                            <small>Your guide to your travels</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon happiness-ico" src="./icons/health.png" alt="">
-                        <div>
-                            <p>Secrets to Happiness</p>
-                            <small>About Hygge, Ikigai, and other ways of living that might help touch serenity</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon bliss-ico" src="./icons/bliss.png" alt="">
-                        <div>
-                            <p>Bliss Restaurant</p>
-                            <small>Tasting experience that feels like heaven</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon hungy-ico" src="./icons/hungy.png" alt="">
-                        <div>
-                            <p>Hungy</p>
-                            <small>A recipies app that's simple</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon nullaby-ico" src="./icons/nullaby.png" alt="">
-                        <div>
-                            <p>Nullaby Software</p>
-                            <small>Software Solutions for businesses.</small>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <img class="p-icon youtube-ico" src="./icons/yt.png" alt="">
-                        <div>
-                            <p>My Youtube Lessons</p>
-                            <small>Knowledge about web design & web developing for everybody</small>
-                        </div>
-                    </div>
-                </div>
+								<div class="skill-container">
+									<div class="skill-bar">
+										<div class="backend">
+											<span> BACKEND </span>
+										</div>
+									</div>
+									<div class="tooltip">
+										<img src="./icons/info.svg" alt="backend skills info" />
+										<span class="tooltiptext"
+											>NODE.JS, EXPRESS, MONGODB, FIREBASE, JWT, BCRYPT,
+											STRIPE</span
+										>
+									</div>
+								</div>
 
-                <div class="goals">
-                    <div class="goal-categories">
-                        <div class="career">
-                            <img src="./icons/green-energy.png" alt="">
-                            <p>
-                                I think I'm in a pretty good spot so far, but the will to become the very best I can is still overflowing. Motivation is sky high and the clouds in my mind are dispersed. I love designing and I enjoy coding. I want to keep on improving my skills and knowledge and live a decent life thanks to my efforts and passion. I want to create beautiful pages and apps, implement ideas with a heartfelt purpose, as well as help people come closer to their own dreams and goals.
-                            </p>
-                        </div>
-                        <div class="personal">
-                            <img src="./icons/map.png" alt="">
-                            <p>The general idea is to be able to make a living through a job that I love and have passion for. In the end, I hope to be able to do things like: travel more, do cool stuff, buy a better guitar, get a caravan, adopt a dog, maybe have kids and show them that not everything is gloom and doom. Play board games and video games with them. Basically I want to live proud and go out with a smile. Doesn't sound bad does it?</p>
-                        </div>
-                        <div class="hopefully">
-                            <img src="./icons/country.png" alt="">
-                            <p>
-                                Hey, I just want to be a kind hearted man and make people happier. Chill with my relationship eating ice cream and watching sitcoms and stuff.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pricing">
-                    <div class="info-categories">
-                        
-                        <div class="overview-banner">
-                            <h1 class="overview-header banner-title underline">OVERVIEW</h1>
-                            <h1 class="timeline-header banner-title">TIMELINE</h1>
-                            <h1 class="terms-header banner-title">TERMS</h1>
-                        </div>
+								<div class="skill-container">
+									<div class="skill-bar">
+										<div class="design">
+											<span> DESIGN </span>
+										</div>
+									</div>
+									<div class="tooltip">
+										<img src="./icons/info.svg" alt="design skills info" />
+										<span class="tooltiptext"
+											>FIGMA, PHOTOSHOP, WEB FLOW, WORDPRESS</span
+										>
+									</div>
+								</div>
 
-                        <div class="plan-info">
-                            <div class="overview-info animate__animated animate__fadeIn animate__delay-1s">
-                                <h3>TO SUM UP</h3>
-                                <p>
-                                    I'm an ambitious developer, I want things to work and look as perfect as possible, giving lots of time even for the smaller details, because i care.
-                                    <br><br>
-                                    For that reason alone, i tend to offer a fixed price per project. 
-                                    In order to avoid stressful situations for the both of us, as well as keep things fair. This way, you avoid having to overpay because of me working overtime to accomplish the best results possible.
-                                    <br>
-                                    So basically, I offer a flat rate price that will be suggested upon filling up the <b style="text-decoration: underline; cursor: pointer;">Proposal Plan</b> form.
-                                    <br><br>
-                                    I'm currently a freelancer at my first steps, rest assured though I'll put the best of my efforts to meet your expectations. I want to be successful and bring food to my table as well.
-                                    <br>
-                                    So feel free to reach out to me about anything, I'll do my best to ease any of your worries.
-                                    <br><br>
-                                    No matter the case though, have a nice day, you! 🐰
-                                </p>
-                            </div>
+								<div class="skill-container">
+									<div class="skill-bar">
+										<div class="passion">
+											<span> PASSION </span>
+										</div>
+									</div>
+									<div class="tooltip">
+										<img src="./icons/info.svg" alt="quote" />
+										<span class="tooltiptext">SKY ISN'T THE LIMIT, I AM.</span>
+									</div>
+								</div>
+							</div>
+						</div>
 
-                            <div class="timeline-info animate__animated animate__fadeIn animate__delay-1s">
-                                <h3>THE ESTIMATED COMPLETION TIME OF THE PROJECT IS 4 WEEKS</h3>
+						<div class="hello animate__animated animate__fadeIn">
+							<h2>HELLO</h2>
+							<p>
+								Hope you're doing well. <br />
+								My name is Charilaos Giannopoulos. <br />
+								I'm a web developer from the <br />
+								beautiful all blue and white Greece. <br />
+								You can call me Harry for ease. <br />
+								<span
+									>I'm a mostly self-taught career switcher on a journey</span
+								>
+								<span>to the world of Web Developing &amp Designing.</span>
+								The destination of this journey? <br />
+								Happiness through a better life. <br />
+								Feel free to reach out
+								<span class="dnone">about anything</span>! ☕
+							</p>
+						</div>
+					</div>
 
-                                <p>
-                                    <span class="phase-info">Phase 1: Design (2 weeks)</span>  
-                                    <br>
-                                    Starting with a kick-off meeting, then homepage design, any iterations, designs of remaining pages and sign-off on final designs. 
-                                    
-                                    You'll be handed out templates of websites to choose from, so we can pre-define the layout of things.
-                                    Detailed information regarding design options will be provided. From layout, to colors, to typography, to interactivity.
-                                    Everything we decide on and do should fit the canvas correctly.
-                                    <br><br>
-                                    <span class="phase-info">Phase 2: Development (1 week)</span>
-                                    <br>
-                                    Development of the designed pages we agreed on.
-                                    <br><br>
-                                    <span class="phase-info">Phase 3: Responsive Design & Launch (1 week)</span>
-                                    <br>
-                                    Development of responsive versions; website launch; training session.
-                                    <br><br>
-                                    <span class="phase-info">Extras:</span>
-                                    <br>
-                                    I can provide any additional services outside of the scope for a small additional price. These can be any additional designs, changes to the website, additional training, brainstorming sessions, etc.
-                                </p>
-                            </div>
+					<div class="work animate__animated animate__fadeInUp">
+						<h2>MY PROJECTS</h2>
+						<div class="project">
+							<img
+								class="p-icon portfolio-ico"
+								src="./icons/portfolio.png"
+								alt="portfolio website logo"
+							/>
+							<div>
+								<p>My Freelance Page</p>
+								<small>You're already visiting it.</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon nature-ico"
+								src="./icons/nature.png"
+								alt="nature whispers hi project logo"
+							/>
+							<div>
+								<p>Nature Whispers Hi</p>
+								<small>Anybody there? Earth is calling.</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon focuro-ico"
+								src="./icons/focuro.png"
+								alt="focuro project logo"
+							/>
+							<div>
+								<p>Focuro</p>
+								<small>Time is precious, let's do our best with it.</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon bohygge-ico"
+								src="./icons/bohygge.png"
+								alt="bohygge project logo"
+							/>
+							<div>
+								<p>Bohygge</p>
+								<small>Boho &amp Hygge themed eshop</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon remember-ico"
+								src="./icons/kite.png"
+								alt="remember when project logo"
+							/>
+							<div>
+								<p>Remember When</p>
+								<small>Childhood memories coming to get you</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon starbloom-ico"
+								src="./icons/starbloom.png"
+								alt="starbloom project logo"
+							/>
+							<div>
+								<p>Starbloom</p>
+								<small
+									>The couples app that grows alongside you. Create moments with
+									it.</small
+								>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon moonshot-ico"
+								src="./icons/moonshot.png"
+								alt="moonshot project logo"
+							/>
+							<div>
+								<p>Moonshot</p>
+								<small>One step for humanity, one shot for eternity.</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon decora-ico"
+								src="./icons/decora.png"
+								alt="decora project logo"
+							/>
+							<div>
+								<p>Decora</p>
+								<small>Design your dream room</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon journey-ico"
+								src="./icons/diary.png"
+								alt="diary project logo"
+							/>
+							<div>
+								<p>The Journey</p>
+								<small>Your personal and special secret diary</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon compass-ico"
+								src="./icons/compass.png"
+								alt="compass project logo"
+							/>
+							<div>
+								<p>Your Compass</p>
+								<small>Your guide to your travels</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon happiness-ico"
+								src="./icons/health.png"
+								alt="happiness project logo"
+							/>
+							<div>
+								<p>Secrets to Happiness</p>
+								<small
+									>About Hygge, Ikigai, and other ways of living that might help
+									touch serenity</small
+								>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon bliss-ico"
+								src="./icons/bliss.png"
+								alt="restaurant project logo"
+							/>
+							<div>
+								<p>Bliss Restaurant</p>
+								<small>Tasting experience that feels like heaven</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon hungy-ico"
+								src="./icons/hungy.png"
+								alt="hungy project logo"
+							/>
+							<div>
+								<p>Hungy</p>
+								<small>A recipies app that's simple</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon nullaby-ico"
+								src="./icons/nullaby.png"
+								alt="nullaby project logo"
+							/>
+							<div>
+								<p>Nullaby Software</p>
+								<small>Software Solutions for businesses.</small>
+							</div>
+						</div>
+						<div class="project">
+							<img
+								class="p-icon youtube-ico"
+								src="./icons/yt.png"
+								alt="youtube logo"
+							/>
+							<div>
+								<p>My YouTube Lessons</p>
+								<small
+									>Knowledge about web design &amp web developing for
+									everybody</small
+								>
+							</div>
+						</div>
+					</div>
 
-                            <div class="terms-info animate__animated animate__fadeIn animate__delay-1s">
-                                <p>
-                                    <span class="phase-info">Payment structure:</span>  
-                                    <br>
-                                    20% upfront <br>
-                                    40% after the client approves the website designs <br>
-                                    40% after the website is built and published <br>
-                                    Payment options: Bank Transfer, Paypal, World Remit, Ko-fi (lol) 
-                                    <br><br>
-                                    <span class="phase-info">Some additional info</span>
-                                    <br>
-                                    Even though there are free options out there, there's a chance you might wish
-                                    to have assets that require expenses. Assets such as paid fonts, stock photos,
-                                    third-party tools, etc. 
-                                    It would help result in a more personalized website, due to less accessible assets.
-                                    If there's a wish for such, it will be discussed before making any purchases.
-                                    This portfolio page uses none of those, still looks pretty though, right?
-                                    <br><br>
-                                    <span class="phase-info">What if?</span>
-                                    <br>
-                                    If the freelancer cancels the project after it has started, the client will pay 
-                                    only for the produced work it intends to use.
-                                    If the client cancels the project after it has started, the client will pay for the 
-                                    time the freelancer has worked on the project. Even if the client does not intend 
-                                    to use the produced work.
-                                    <br><br>
-                                    <span class="phase-info">All yours.</span>
-                                    <br>
-                                    The client owns all produced work.
-                                </p>
-                            </div>
-                        </div>
+					<div class="goals">
+						<div
+							class="goal-categories animate__animated animate__jackInTheBox"
+						>
+							<div class="career">
+								<img src="./icons/green-energy.png" alt="carreer section" />
+								<p>
+									I think I'm in a pretty good spot so far, but the will to
+									become the very best I can is still overflowing. Motivation is
+									sky high and the clouds in my mind are dispersed. I love
+									designing and I enjoy coding. I want to keep on improving my
+									skills and knowledge and live a decent life thanks to my
+									efforts and passion. I want to create beautiful pages and
+									apps, implement ideas with a heartfelt purpose, as well as
+									help people come closer to their own dreams and goals. Lots of
+									passion keeps this train moving. Choo Choo!
+								</p>
+							</div>
+							<div class="personal">
+								<img src="./icons/map.png" alt="personal section" />
+								<p>
+									The general idea is to be able to make a living through a job
+									that I love and have passion for. In the end, I hope to be
+									able to do things like: travel more, do cool stuff, buy a
+									better guitar, get a caravan, adopt a dog, maybe have kids and
+									show them that not everything is gloom and doom. Play board
+									games and video games with them. Basically I want to give it
+									my all and go out with a smile. Doesn't sound bad does it?
+								</p>
+							</div>
+							<div class="hopefully">
+								<img src="./icons/country.png" alt="last words section" />
+								<p>
+									Hey, I just want to be a kind hearted man and make people
+									happier. Chill with my relationship while eating ice cream and
+									watching sitcoms and stuff. To shape my dreams into reality, I
+									just have to do my best. Being the best I can in what i do is
+									my goal. So, yeah.. If you decide to entrust me with a
+									project, thank you, from the bottom of my heart.
+								</p>
+							</div>
+						</div>
+					</div>
 
-                        <div class="lets-talk animate__animated animate__fadeIn animate__delay-1s">
-                            <div class="lets-talk-banner">
-                                <div class="lets-talk-buttons">
-                                    <button onclick="document.location='contact.html'">Get in touch!</button>
-                                    <button onclick="document.location='proposal.html'">Get a Proposal Plan!</button>
-                                </div>
-                                <div class="lets-talk-logo">
-                                    <img src="./icons/path.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+					<div class="pricing">
+						<div class="info-categories">
+							<div class="overview-banner">
+								<h2 class="overview-header banner-title underline">OVERVIEW</h2>
+								<h2 class="timeline-header banner-title">TIMELINE</h2>
+								<h2 class="terms-header banner-title">TERMS</h2>
+							</div>
 
-            <div class="select">
-                <div class="buttons-container">
-                    <div class="select-content-buttons">
-                        <button class="current button1">
-                            <a href="#slogan"></a> 
-                            About <span class="dnone">Me</span>
-                        </button>
-                        <button class="button2">
-                            <a href="#slogan"></a> 
-                            <span class="dnone">My</span> Work
-                        </button>
-                        <button class="button3">
-                            <a href="#slogan"></a> 
-                            <span class="dnone">My</span> Goals
-                        </button>
-                        <button class="button4">
-                            Pricing
-                        </button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="mountain-sun">
-                <div class="sun-container">
-                    <img class="sun" src="./icons/sun.svg" alt="">
-                </div>
-                <img class="mountain" src="./icons/mountain.svg" alt="">
-            </div>
-        </div>
-    </section>
-    <!-- <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-    <script>
-    kofiWidgetOverlay.draw('amefurikozo', {
-        'type': 'floating-chat',
-        'floating-chat.donateButton.text': 'Support Me',
-        'floating-chat.donateButton.background-color': '#ffffff',
-        'floating-chat.donateButton.text-color': '#323842'
-    });
-    </script> -->
-    <script src="./js/script.js"></script>
-</body>
+							<div class="plan-info">
+								<div
+									class="overview-info animate__animated animate__fadeIn animate__delay-1s"
+								>
+									<h3>TO SUM UP</h3>
+									<p>
+										I'm an ambitious developer, I want things to work and look
+										as perfect as possible, giving lots of time even for the
+										smaller details, because i care.
+										<br /><br />
+										For that reason alone, i tend to offer a fixed price per
+										project. In order to avoid stressful situations for the both
+										of us, as well as keep things fair. This way, you avoid
+										having to overpay because of me working overtime to
+										accomplish the best results possible.
+										<br />
+										So basically, I offer a flat rate price that will be
+										suggested upon filling up the
+										<a
+											class="link-to-proposal-page"
+											aria-label="Go to the proposal plan page"
+											href="./page/proposal.html"
+											>Proposal Plan</a
+										>
+										form. <br /><br />
+										I'm currently a freelancer at my first steps, rest assured
+										though I'll put the best of my efforts to meet your
+										expectations. I want to be successful and bring food to my
+										table as well.
+										<br />
+										So feel free to reach out to me about anything, I'll do my
+										best to ease any of your worries.
+										<br /><br />
+										No matter the case though, have a nice day, you! 🐰
+									</p>
+								</div>
+
+								<div
+									class="timeline-info animate__animated animate__fadeIn animate__delay-1s"
+								>
+									<h3>
+										THE ESTIMATED COMPLETION TIME OF THE PROJECT IS 4 WEEKS
+									</h3>
+
+									<p>
+										<span class="phase-info">Phase 1: Design (2 weeks)</span>
+										<br />
+										Starting with a kick-off meeting, then homepage design, any
+										iterations, designs of remaining pages and sign-off on final
+										designs. You'll be handed out templates of websites to
+										choose from, so we can pre-define the layout of things.
+										Detailed information regarding design options will be
+										provided. From layout, to colors, to typography, to
+										interactivity. Everything we decide on and do should fit the
+										canvas correctly.
+										<br /><br />
+										<span class="phase-info"
+											>Phase 2: Development (1 week)</span
+										>
+										<br />
+										Development of the designed pages we agreed on.
+										<br /><br />
+										<span class="phase-info"
+											>Phase 3: Responsive Design &amp Launch (1 week)</span
+										>
+										<br />
+										Development of responsive versions; website launch; training
+										session.
+										<br /><br />
+										<span class="phase-info">Extras:</span>
+										<br />
+										I can provide any additional services outside of the scope
+										for a small additional price. These can be any additional
+										designs, changes to the website, additional training,
+										brainstorming sessions, etc.
+									</p>
+								</div>
+
+								<div
+									class="terms-info animate__animated animate__fadeIn animate__delay-1s"
+								>
+									<p>
+										<span class="phase-info">Payment structure:</span>
+										<br />
+										20% upfront <br />
+										40% after the client approves the website designs <br />
+										40% after the website is built and published <br />
+										Payment options: Bank Transfer, Paypal, World Remit, Ko-fi
+										(lol)
+										<br /><br />
+										<span class="phase-info">Some additional info</span>
+										<br />
+										Even though there are free options out there, there's a
+										chance you might wish to have assets that require expenses.
+										Assets such as paid fonts, stock photos, third-party tools,
+										etc. It would help result in a more personalized website,
+										due to less accessible assets. If there's a wish for such,
+										it will be discussed before making any purchases. This
+										portfolio page uses none of those, still looks pretty
+										though, right?
+										<br /><br />
+										<span class="phase-info">What if?</span>
+										<br />
+										If the freelancer cancels the project after it has started,
+										the client will pay only for the produced work it intends to
+										use. If the client cancels the project after it has started,
+										the client will pay for the time the freelancer has worked
+										on the project. Even if the client does not intend to use
+										the produced work.
+										<br /><br />
+										<span class="phase-info">All yours.</span>
+										<br />
+										The client owns all produced work.
+									</p>
+								</div>
+							</div>
+
+							<div
+								class="lets-talk animate__animated animate__fadeIn animate__delay-1s"
+							>
+								<div class="lets-talk-banner">
+									<div class="lets-talk-buttons">
+										<a href="./page/contact.html"> Get in touch! </a>
+										<a href="./page/proposal.html"> Get a Proposal Plan! </a>
+									</div>
+									<div class="lets-talk-logo">
+										<img src="./icons/path.png" alt="mountain" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="select">
+					<div class="buttons-container">
+						<div class="select-content-buttons">
+							<button class="current button1">
+								<a href="#slogan" aria-label="Read about me"></a>
+								About <span class="dnone">Me</span>
+							</button>
+							<button class="button2">
+								<a
+									href="#slogan"
+									aria-label="Find more about my work and projects"
+								></a>
+								<span class="dnone">My</span> Work
+							</button>
+							<button class="button3">
+								<a href="#slogan" aria-label="About my dreams and goals"></a>
+								<span class="dnone">My</span> Goals
+							</button>
+							<button class="button4">Pricing</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="mountain-sun">
+					<div class="sun-container">
+						<img class="sun" src="./icons/sun.svg" alt="sun" />
+					</div>
+					<img class="mountain" src="./icons/mountain.svg" alt="mountain" />
+				</div>
+			</main>
+		</section>
+		<script src="./js/script.js"></script>
+	</body>
 </html>

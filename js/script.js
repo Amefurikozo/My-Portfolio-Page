@@ -1,125 +1,133 @@
-// CONTENT
-const about = $('.about').detach()
-const work = $('.work').detach()
-const goals = $('.goals').detach()
-const pricing = $('.pricing').detach()
+const about = document.querySelector('.about')
+const work = document.querySelector('.work')
+const goals = document.querySelector('.goals')
+const pricing = document.querySelector('.pricing')
 
-$('.button1').on('click',function () {
-	$('.work').detach()
-    $('.goals').detach()
-    $('.pricing').detach()
-	$('.content').append(about)
-    
-    $('.current-skills').addClass('animate__animated animate__flipInX')
-    $('.hello').addClass('animate__animated animate__fadeIn')
-    
-    $('.content').removeClass('active')
-    $('.slogan img').css('display', 'none')
-    $('.slogan').css('display', 'flex')
-    $('.mountain-sun').css('display', 'flex')
+work.style.display = 'none'
+goals.style.display = 'none'
+pricing.style.display = 'none'
+about.style.display = ''
 
-    $('.button1').addClass('current')
-    $('.button2').removeClass('current')
-    $('.button3').removeClass('current')
-    $('.button4').removeClass('current')
-})
+button1 = document.querySelector('.button1')
+button2 = document.querySelector('.button2')
+button3 = document.querySelector('.button3')
+button4 = document.querySelector('.button4')
 
-$('.button2').on('click',function () {
-	$('.about').detach()
-    $('.goals').detach()
-    $('.pricing').detach()
-	$('.content').append(work)
+logoSection = document.querySelector('.mountain-sun')
+sloganImgSection = document.querySelector('.slogan img')
+contentSection = document.querySelector('.content')
 
-    $('.work').addClass('animate__animated animate__fadeInUp')
+slogan = document.querySelector('.slogan')
 
-    $('.content').removeClass('active')
-    $('.slogan img').css('display', 'none')
-    $('.slogan').css('display', 'flex')
-    $('.mountain-sun').css('display', 'flex')
+button1.onclick = function () {
+	work.style.display = 'none'
+	goals.style.display = 'none'
+	pricing.style.display = 'none'
+	about.style.display = ''
 
-    $('.button1').removeClass('current')
-    $('.button2').addClass('current')
-    $('.button3').removeClass('current')
-    $('.button4').removeClass('current')
-})
+	contentSection.classList.remove('active')
+	sloganImgSection.style.display = 'none'
+	slogan.style.display = 'flex'
+	logoSection.style.display = 'flex'
 
-$('.button3').on('click', function () {
-	$('.about').detach()
-    $('.work').detach()
-    $('.pricing').detach()
-	$('.content').append(goals)
+	button1.classList.add('current')
+	button2.classList.remove('current')
+	button3.classList.remove('current')
+	button4.classList.remove('current')
+}
 
-    $('.goal-categories').addClass('animate__animated animate__jackInTheBox')
+button2.onclick = function () {
+	about.style.display = 'none'
+	goals.style.display = 'none'
+	pricing.style.display = 'none'
+	work.style.display = ''
 
-    $('.content').removeClass('active')
-    $('.slogan img').css('display', 'none')
-    $('.slogan').css('display', 'flex')
-    $('.mountain-sun').css('display', 'flex')
+	contentSection.classList.remove('active')
+	sloganImgSection.style.display = 'none'
+	slogan.style.display = 'flex'
+	logoSection.style.display = 'flex'
 
-    $('.button1').removeClass('current')
-    $('.button2').removeClass('current')
-    $('.button3').addClass('current')
-    $('.button4').removeClass('current')
-})
+	button1.classList.remove('current')
+	button2.classList.add('current')
+	button3.classList.remove('current')
+	button4.classList.remove('current')
+}
 
-$('.button4').on('click',function () {
-	$('.about').detach()
-    $('.work').detach()
-    $('.goals').detach()
-	$('.content').append(pricing)
+button3.onclick = function () {
+	about.style.display = 'none'
+	work.style.display = 'none'
+	pricing.style.display = 'none'
+	goals.style.display = ''
 
-    $('.mountain-sun').css('display', 'none')
-    $('.slogan img').css('display', 'block')
-    $('.slogan img').addClass('animate__animated animate__fadeIn')
+	contentSection.classList.remove('active')
+	sloganImgSection.style.display = 'none'
+	slogan.style.display = 'flex'
+	logoSection.style.display = 'flex'
 
-    $('.content').addClass('active')
+	button1.classList.remove('current')
+	button2.classList.remove('current')
+	button3.classList.add('current')
+	button4.classList.remove('current')
+}
 
-    $('.button1').removeClass('current')
-    $('.button2').removeClass('current')
-    $('.button3').removeClass('current')
-    $('.button4').addClass('current')
+button4.onclick = function () {
+	about.style.display = 'none'
+	work.style.display = 'none'
+	goals.style.display = 'none'
+	pricing.style.display = ''
 
-    $('.timeline-header').on('click', function() {
-        $('.timeline-header').addClass('underline')
-        $('.overview-header').removeClass('underline')
-        $('.terms-header').removeClass('underline')
+	logoSection.style.display = 'none'
+	sloganImgSection.style.display = 'block'
+	contentSection.classList.add('active')
 
-        $('.overview-info').css('display', 'none')
-        $('.terms-info').css('display', 'none')
-        $('.timeline-info').css('display', 'block')
-    })
+	button1.classList.remove('current')
+	button2.classList.remove('current')
+	button3.classList.remove('current')
+	button4.classList.add('current')
+}
 
-    $('.terms-header').on('click', function() {
-        $('.terms-header').addClass('underline')
-        $('.timeline-header').removeClass('underline')
-        $('.overview-header').removeClass('underline')
+timeline = document.querySelector('.timeline-header')
+terms = document.querySelector('.terms-header')
+overview = document.querySelector('.overview-header')
 
-        $('.overview-info').css('display', 'none')
-        $('.timeline-info').css('display', 'none')
-        $('.terms-info').css('display', 'block')
-    })
+timeline.onclick = function () {
+	document.querySelector('.timeline-header').classList.add('underline')
+	document.querySelector('.overview-header').classList.remove('underline')
+	document.querySelector('.terms-header').classList.remove('underline')
 
-    $('.overview-header').on('click', function() {
-        $('.overview-header').addClass('underline')
-        $('.timeline-header').removeClass('underline')
-        $('.terms-header').removeClass('underline')
+	document.querySelector('.overview-info').style.display = 'none'
+	document.querySelector('.terms-info').style.display = 'none'
+	document.querySelector('.timeline-info').style.display = 'block'
+}
 
-        $('.terms-info').css('display', 'none')
-        $('.timeline-info').css('display', 'none')
-        $('.overview-info').css('display', 'block')
-    })
-})
+terms.onclick = function () {
+	document.querySelector('.terms-header').classList.add('underline')
+	document.querySelector('.timeline-header').classList.remove('underline')
+	document.querySelector('.overview-header').classList.remove('underline')
 
-$('.content').append(about)
+	document.querySelector('.overview-info').style.display = 'none'
+	document.querySelector('.timeline-info').style.display = 'none'
+	document.querySelector('.terms-info').style.display = 'block'
+}
 
+overview.onclick = function () {
+	document.querySelector('.overview-header').classList.add('underline')
+	document.querySelector('.timeline-header').classList.remove('underline')
+	document.querySelector('.terms-header').classList.remove('underline')
 
-// NAVBAR
-$('.menu-button img').on('click',function () {
-    if ($('.dropdown').css('display') == 'flex'){
-        $('.dropdown').css('display', 'none')
-        $('.menu-button img').removeClass('menuActive')
-    } else {
-        $('.dropdown').css('display', 'flex')
-        $('.menu-button img').addClass('menuActive')
-    }
-})
+	document.querySelector('.terms-info').style.display = 'none'
+	document.querySelector('.timeline-info').style.display = 'none'
+	document.querySelector('.overview-info').style.display = 'block'
+}
+
+menu = document.querySelector('.menu-button img')
+menu.onclick = function () {
+	console.log(menu)
+	if (document.querySelector('.dropdown').style.display === 'flex') {
+		document.querySelector('.dropdown').style.display = 'none'
+		document.querySelector('.menu-button img').classList.remove('menuActive')
+	} else {
+		document.querySelector('.dropdown').style.display = 'flex'
+		document.querySelector('.menu-button img').classList.add('menuActive')
+	}
+}
