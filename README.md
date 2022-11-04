@@ -1,6 +1,6 @@
 ### MY PORTFOLIO PAGE
 
-This website was created during my first 2 months of learning the basics of web design and web developing, so it feels kind of special to me.  
+This website was created during my first months of learning the basics of web design and web developing, it's my second effort at building a portfolio-like website, so it feels kind of special to me.  
 I kind of tried to do a few things differently from the regular, design wise that is.. and I'm quite fond of the results.  
 
 It's made with HTML, CSS and a lil bit of Javascript.   
